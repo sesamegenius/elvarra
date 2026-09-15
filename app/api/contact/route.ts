@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, VousEtes, ObjetDemande, TypeSinistre, ExpertiseStatut, PropositionStatut } from "@prisma/client";
 import nodemailer from "nodemailer";
-
 const prisma = new PrismaClient();
 
 const transporter = nodemailer.createTransport({
@@ -70,8 +69,8 @@ const PROPOSITION_STATUT_LABELS: Record<string, string> = {
   ne_sait_pas: "Je ne sais pas",
 };
 
-function toEnumValue(value: string) {
-  return value.toUpperCase();
+function toEnumValue<T extends string>(value: string): T {
+  return value.toUpperCase() as T;
 }
 
 function parseDate(value: unknown): Date | null {
@@ -153,13 +152,13 @@ export async function POST(request: NextRequest) {
     // Sauvegarde en base de données
     const contactQuery = await prisma.contactQuery.create({
       data: {
-        vousEtes: toEnumValue(vousEtes),
-        objet: toEnumValue(objet),
-        typeSinistre: typeSinistre ? toEnumValue(typeSinistre) : undefined,
+        vousEtes: toEnumValue<VousEtes>(vousEtes),
+        objet: toEnumValue<ObjetDemande>(objet),
+        typeSinistre: typeSinistre ? toEnumValue<TypeSinistre>(typeSinistre) : undefined,
         dateSinistre: parseDate(dateSinistre) ?? undefined,
-        expertiseStatut: expertiseStatut ? toEnumValue(expertiseStatut) : undefined,
+        expertiseStatut: expertiseStatut ? toEnumValue<ExpertiseStatut>(expertiseStatut) : undefined,
         expertiseDate: parseDate(expertiseDate) ?? undefined,
-        propositionStatut: propositionStatut ? toEnumValue(propositionStatut) : undefined,
+        propositionStatut: propositionStatut ? toEnumValue<PropositionStatut>(propositionStatut) : undefined,
         codePostal,
         fullName,
         company: company || null,
