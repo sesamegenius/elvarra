@@ -373,13 +373,13 @@ export default function ContactForm({
           />
         </div>
 
-        <div className="rounded-xl border border-dashed border-[#DCE1DD] bg-[#F1F1EC] p-4">
+       {/*  <div className="rounded-xl border border-dashed border-[#DCE1DD] bg-[#F1F1EC] p-4">
           <p className="text-[14px] text-[#4A5568]">
             Pièces jointes — fonctionnalité à venir. Cette option sera activée avec un
             hébergement, une sécurité, une durée de conservation et une information RGPD
             adaptés.
           </p>
-        </div>
+        </div> */}
 
         <div className="space-y-3">
           <label className="flex items-start gap-3 text-[14px] text-[#4A5568]">

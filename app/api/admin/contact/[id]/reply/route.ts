@@ -72,24 +72,363 @@ export async function POST(
         to: contact.email,
         subject: `Re: ${objetLabel}`,
         html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #14213D;">Réponse à votre demande</h2>
-            <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <p>Bonjour ${contact.fullName},</p>
-              <p>Merci pour votre message concernant : <strong>${objetLabel}</strong></p>
-            </div>
-            <div style="background-color: #ffffff; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-              <h3 style="color: #1e293b; margin-top: 0;">Notre réponse</h3>
-              <p style="white-space: pre-wrap;">${content}</p>
-            </div>
-            <div style="margin-top: 20px; padding: 15px; background-color: #f0f9ff; border-radius: 8px;">
-              <p style="margin: 0; color: #0369a1;">
-                <strong>Équipe ELVARRA</strong><br>
-                Si vous avez d'autres questions, n'hésitez pas à nous contacter.
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réponse à votre demande - ELVARRA</title>
+</head>
+
+<body style="
+  margin: 0;
+  padding: 0;
+  background-color: #EEF4F1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3A4657;
+">
+
+  <!-- Wrapper principal -->
+  <table
+    role="presentation"
+    width="100%"
+    cellspacing="0"
+    cellpadding="0"
+    border="0"
+    style="background-color: #EEF4F1; margin: 0; padding: 32px 16px;"
+  >
+    <tr>
+      <td align="center">
+
+        <!-- Container -->
+        <table
+          role="presentation"
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          style="
+            max-width: 640px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+          "
+        >
+
+          <!-- HEADER -->
+          <tr>
+            <td
+              style="
+                background-color: #14213D;
+                padding: 28px 36px;
+              "
+            >
+              <table
+                role="presentation"
+                width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tr>
+                  <td>
+                    <div style="
+                      font-size: 24px;
+                      line-height: 1;
+                      font-weight: 700;
+                      letter-spacing: 1px;
+                      color: #ffffff;
+                    ">
+                      ELVARRA
+                    </div>
+
+                    <div style="
+                      margin-top: 8px;
+                      font-size: 11px;
+                      line-height: 1.4;
+                      letter-spacing: 1.8px;
+                      text-transform: uppercase;
+                      color: #A9B4C4;
+                    ">
+                      Expert d'assuré
+                    </div>
+                  </td>
+
+                  <td align="right" valign="middle">
+                    <div style="
+                      width: 42px;
+                      height: 42px;
+                      line-height: 42px;
+                      text-align: center;
+                      border-radius: 12px;
+                      background-color: rgba(255,255,255,0.08);
+                      color: #BFD3E8;
+                      font-size: 18px;
+                      font-weight: 700;
+                    ">
+                      E
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ACCENT -->
+          <tr>
+            <td style="height: 4px; background-color: #5B90D6; font-size: 0; line-height: 0;">
+              &nbsp;
+            </td>
+          </tr>
+
+          <!-- INTRO -->
+          <tr>
+            <td style="padding: 40px 36px 24px 36px;">
+
+              <div style="
+                font-size: 11px;
+                line-height: 1.4;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                color: #1F6F63;
+                margin-bottom: 12px;
+              ">
+                Réponse à votre demande
+              </div>
+
+              <h1 style="
+                margin: 0;
+                color: #14213D;
+                font-size: 30px;
+                line-height: 1.2;
+                font-weight: 700;
+              ">
+                Bonjour ${contact.fullName},
+              </h1>
+
+              <p style="
+                margin: 18px 0 0 0;
+                color: #4A5568;
+                font-size: 15px;
+                line-height: 1.7;
+              ">
+                Merci pour votre message et pour la confiance accordée à
+                <strong style="color: #14213D;">ELVARRA</strong>.
               </p>
-            </div>
-          </div>
-        `,
+
+            </td>
+          </tr>
+
+          <!-- OBJET DE LA DEMANDE -->
+          <tr>
+            <td style="padding: 0 36px 28px 36px;">
+
+              <table
+                role="presentation"
+                width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                style="
+                  background-color: #F4F7FA;
+                  border: 1px solid #E1E7ED;
+                  border-radius: 14px;
+                "
+              >
+                <tr>
+                  <td style="padding: 18px 20px;">
+
+                    <div style="
+                      font-size: 10px;
+                      line-height: 1.4;
+                      font-weight: 700;
+                      letter-spacing: 1.3px;
+                      text-transform: uppercase;
+                      color: #5B6B82;
+                      margin-bottom: 7px;
+                    ">
+                      Votre demande
+                    </div>
+
+                    <div style="
+                      font-size: 15px;
+                      line-height: 1.5;
+                      font-weight: 600;
+                      color: #14213D;
+                    ">
+                      ${objetLabel}
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- REPONSE -->
+          <tr>
+            <td style="padding: 0 36px 36px 36px;">
+
+              <div style="
+                font-size: 11px;
+                line-height: 1.4;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                color: #5B90D6;
+                margin-bottom: 12px;
+              ">
+                Notre réponse
+              </div>
+
+              <table
+                role="presentation"
+                width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                style="
+                  background-color: #ffffff;
+                  border: 1px solid #E1E7ED;
+                  border-radius: 14px;
+                "
+              >
+                <tr>
+                  <td style="padding: 24px;">
+
+                    <div style="
+                      color: #3A4657;
+                      font-size: 15px;
+                      line-height: 1.75;
+                      white-space: pre-wrap;
+                    ">
+                      ${content}
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- SIGNATURE / CTA -->
+          <tr>
+            <td style="padding: 0 36px 40px 36px;">
+
+              <table
+                role="presentation"
+                width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                style="
+                  background-color: #14213D;
+                  border-radius: 16px;
+                "
+              >
+                <tr>
+                  <td style="padding: 24px 26px;">
+
+                    <div style="
+                      color: #ffffff;
+                      font-size: 16px;
+                      line-height: 1.5;
+                      font-weight: 700;
+                    ">
+                      L'équipe ELVARRA
+                    </div>
+
+                    <div style="
+                      margin-top: 8px;
+                      color: #A9B4C4;
+                      font-size: 13px;
+                      line-height: 1.6;
+                    ">
+                      Nous restons à votre disposition pour toute
+                      question complémentaire concernant votre dossier.
+                    </div>
+
+                    <div style="
+                      margin-top: 18px;
+                      width: 40px;
+                      height: 3px;
+                      background-color: #D9A44E;
+                      border-radius: 3px;
+                    ">
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td
+              style="
+                padding: 24px 36px 30px 36px;
+                background-color: #F4F6F5;
+                border-top: 1px solid #E5E9E7;
+              "
+            >
+
+              <div style="
+                color: #14213D;
+                font-size: 13px;
+                line-height: 1.5;
+                font-weight: 700;
+              ">
+                ELVARRA
+              </div>
+
+              <div style="
+                margin-top: 5px;
+                color: #6B7788;
+                font-size: 11px;
+                line-height: 1.6;
+              ">
+                Expert d'assuré
+              </div>
+
+              <div style="
+                margin-top: 14px;
+                color: #8A94A3;
+                font-size: 10px;
+                line-height: 1.6;
+              ">
+                Ce message vous est adressé dans le cadre de votre
+                demande auprès d'ELVARRA.
+              </div>
+
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Mentions sous le container -->
+        <div style="
+          max-width: 600px;
+          padding: 18px 20px 0 20px;
+          color: #7B8794;
+          font-size: 10px;
+          line-height: 1.5;
+          text-align: center;
+        ">
+          © ELVARRA — Tous droits réservés
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+`,
       };
 
       await transporter.sendMail(mailOptions);

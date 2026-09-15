@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/PageUI';
 import { IconPhone, IconMenu, IconClose } from '@/components/icons';
 import Image from 'next/image';
@@ -17,101 +17,153 @@ const NAV_LINKS = [
 export default function Header() {
   const [open, setOpen] = useState(false);
 
+  // Bloque le scroll du body quand le menu mobile est ouvert
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
+
+  const closeMenu = () => setOpen(false);
+  const toggleMenu = () => setOpen((v) => !v);
+
   return (
-    <header className="sticky top-0 z-50 bg-white/85 rounded-lg shadow-lg backdrop-blur mx-auto w-[95%] lg:w-[90%]">
-      <div className="mx-auto flex  items-center justify-center md:justify-between px-4 sm:px-6 py-2 sm:py-3">
-      <Link
-  href="/"
-  className="shrink-0 flex items-center max-h-24"
->
-  <Image
-    src="/ElvarraLogo.png"
-    alt="Logo Elvarra"
-    width={240}
-    height={64}
-    priority
-    className="h-full w-auto sm:h-10 lg:h-full"
-  />
-</Link>
+    <>
+      <header
+        className="
+          sticky top-0
+          isolate
+          z-[9999]
+          mx-auto
+          w-[95%]
+          lg:w-[90%]
+          rounded-lg
+          bg-white
+          shadow-lg
+        "
+      >
+        {/* BARRE PRINCIPALE */}
+        <div className="flex h-16 items-center justify-between px-4 sm:h-20 sm:px-6">
 
-        <nav className="hidden 2xl:flex items-center gap-8 w-fit">
-          {NAV_LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-[15px] text-[#3A4657] hover:text-[#14213D] transition-colors w-fit"
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden 2xl:flex items-center gap-3">
+          {/* LOGO — agrandi */}
           <Link
-            href="tel:+33185099748"
-            className="flex items-center gap-2 text-[15px] text-[#3A4657] hover:text-[#14213D]"
+            href="/"
+            onClick={closeMenu}
+            className="relative block h-12 w-[170px] shrink-0 sm:h-16 sm:w-[220px]"
           >
-            <IconPhone className="h-4 w-4" />
-            01 85 09 97 48
+            <Image
+              src="/ElvarraLogo.png"
+              alt="Logo Elvarra"
+              fill
+              priority
+              sizes="220px"
+              className="object-contain object-left"
+            />
           </Link>
 
-          <Button href="/contact/" variant="primary">
-            Parler à un expert
-          </Button>
-        </div>
-
-        <div className="flex gap-2 2xl:hidden">
-  <Link
-    href="tel:+33185099748"
-    aria-label="Appeler"
-    className="flex items-center justify-center rounded-full bg-[#14213D] p-2 text-white"
-  >
-    <IconPhone className="h-5 w-5 text-white" />
-  </Link>
-
-  <button
-    aria-label="Ouvrir le menu"
-    onClick={() => setOpen(!open)}
-    className="text-[#14213D]"
-  >
-    {open ? (
-      <IconClose className="h-6 w-6" />
-    ) : (
-      <IconMenu className="h-6 w-6" />
-    )}
-  </button>
-</div>
-      </div>
-
-      {open && (
-        <div className="2xl:hidden bg-white px-12 py-5 rounded-b-lg">
-          <nav className="flex flex-col lg:flex-row lg:justify-between gap-4 px-6">
-            {NAV_LINKS.map((l) => (
+          {/* NAVIGATION DESKTOP */}
+          <nav className="hidden 2xl:flex items-center gap-8">
+            {NAV_LINKS.map((link) => (
               <Link
-                key={l.href}
-                href={l.href}
-                className="text-[16px] text-[#3A4657]"
+                key={link.href}
+                href={link.href}
+                className="text-[15px] text-[#3A4657] transition-colors hover:text-[#14213D]"
               >
-                {l.label}
+                {link.label}
               </Link>
             ))}
           </nav>
 
-          <div className="mt-5 flex flex-col gap-3 justify-center">
-        {/*     <Link
+          {/* ACTIONS DESKTOP */}
+          <div className="hidden 2xl:flex items-center gap-3">
+            <Link
               href="tel:+33185099748"
-              className="flex items-center gap-2 text-[15px] text-[#3A4657]"
+              className="flex items-center gap-2 text-[15px] text-[#3A4657] hover:text-[#14213D]"
             >
               <IconPhone className="h-4 w-4" />
               01 85 09 97 48
-            </Link> */}
+            </Link>
 
-            <Button href="/contact/" variant="primary" className="w-full">
+            <Button href="/contact/" variant="primary">
               Parler à un expert
             </Button>
           </div>
+
+          {/* MOBILE / TABLETTE */}
+          <div className="flex shrink-0 items-center gap-2 2xl:hidden">
+            {/* TELEPHONE */}
+            <Link
+              href="tel:+33185099748"
+              aria-label="Appeler ELVARRA"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#14213D] text-white"
+            >
+              <IconPhone className="h-5 w-5" />
+            </Link>
+
+            {/* HAMBURGER */}
+            <button
+              type="button"
+              aria-label={open ? 'Fermer le menu' : 'Ouvrir le menu'}
+              aria-expanded={open}
+              onClick={toggleMenu}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAF0F8] text-[#14213D]"
+            >
+              {open ? (
+                <IconClose className="h-6 w-6" />
+              ) : (
+                <IconMenu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
+
+        {/* MENU MOBILE */}
+        {open && (
+          <nav
+            className="
+              absolute
+              left-0
+              right-0
+              top-full
+              z-[9999]
+              flex
+              flex-col
+              rounded-b-lg
+              bg-white
+              p-4
+              shadow-xl
+              2xl:hidden
+            "
+          >
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className="rounded-xl px-4 py-3 text-[16px] text-[#3A4657] active:bg-[#F1F4F7]"
+              >
+                {link.label}
+              </Link>
+            ))}
+
+            <div className="mt-2 border-t border-[#E5E9ED] pt-4">
+              <Button href="/contact/" variant="primary" className="w-full">
+                Parler à un expert
+              </Button>
+            </div>
+          </nav>
+        )}
+      </header>
+
+      {/* Overlay cliquable pour fermer le menu en tapant en dehors */}
+      {open && (
+        <div
+          onClick={closeMenu}
+          className="fixed inset-0 z-[9998] 2xl:hidden"
+          aria-hidden="true"
+        />
       )}
-    </header>
+    </>
   );
 }

@@ -1,54 +1,53 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Dommages après événement climatique | ELVARRA",
+  description:
+    "Tempête, grêle ou fortes pluies : ELVARRA vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
   icons: {
-    icon: "",
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "",
-    description: "",
+    title: "Dommages après événement climatique | ELVARRA",
+    description:
+      "Tempête, grêle ou fortes pluies : ELVARRA vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
     images: [
       {
-        url: "",
+        url: "/og/evenements-climatiques.jpg",
         width: 1200,
         height: 630,
-        alt: "",
+        alt: "ELVARRA — Dommages après événement climatique",
       },
     ],
     siteName: "Elvarra",
     type: "website",
-    url: "",
+    url: "https://elvarra.fr/sinistres/evenements-climatiques/",
     locale: "fr_FR",
     countryName: "France",
   },
   twitter: {
-    title: "",
-    description: "",
+    title: "Dommages après événement climatique | ELVARRA",
+    description:
+      "Tempête, grêle ou fortes pluies : ELVARRA vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
     images: [
       {
-        url: "",
+        url: "/og/evenements-climatiques.jpg",
         width: 1200,
         height: 630,
-        alt: "",
+        alt: "ELVARRA — Dommages après événement climatique",
       },
     ],
   },
   alternates: {
-    canonical: "",
+    canonical: "https://elvarra.fr/sinistres/evenements-climatiques/",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
+    googleBot: { index: true, follow: true },
   },
-  themeColor: "#000000",
   appleWebApp: {
-    title: "",
+    title: "ELVARRA",
   },
 };
 
@@ -56,16 +55,13 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  themeColor: "#14213D",
 };
 
-export default function TemplateLayout({ // A Changer
+export default function EvenementsClimatiquesLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <main className="bg-white rounded-xl shadow-lg">
-        {children}
-    </main>
-  );
+  return <>{children}</>;
 }

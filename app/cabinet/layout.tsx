@@ -1,71 +1,36 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
-  icons: {
-    icon: "",
-  },
+  title: "Le cabinet d'expertise d'assuré ELVARRA",
+  description: "Découvrez l'approche, les engagements et l'équipe du cabinet ELVARRA.",
+  icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "",
-    description: "",
-    images: [
-      {
-        url: "",
-        width: 1200,
-        height: 630,
-        alt: "",
-      },
-    ],
+    title: "Le cabinet d'expertise d'assuré ELVARRA",
+    description: "Découvrez l'approche, les engagements et l'équipe du cabinet ELVARRA.",
+    images: [{ url: "/og/cabinet.jpg", width: 1200, height: 630, alt: "ELVARRA — Le cabinet" }],
     siteName: "Elvarra",
     type: "website",
-    url: "",
+    url: "https://elvarra.fr/cabinet/",
     locale: "fr_FR",
     countryName: "France",
   },
   twitter: {
-    title: "",
-    description: "",
-    images: [
-      {
-        url: "",
-        width: 1200,
-        height: 630,
-        alt: "",
-      },
-    ],
+    title: "Le cabinet d'expertise d'assuré ELVARRA",
+    description: "Découvrez l'approche, les engagements et l'équipe du cabinet ELVARRA.",
+    images: [{ url: "/og/cabinet.jpg", width: 1200, height: 630, alt: "ELVARRA — Le cabinet" }],
   },
-  alternates: {
-    canonical: "",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-  themeColor: "#000000",
-  appleWebApp: {
-    title: "",
-  },
+  alternates: { canonical: "https://elvarra.fr/cabinet/" },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  appleWebApp: { title: "ELVARRA" },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  themeColor: "#14213D",
 };
 
-export default function TemplateLayout({ // A Changer
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <main className="bg-white rounded-xl shadow-lg">
-        {children}
-    </main>
-  );
+export default function CabinetLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

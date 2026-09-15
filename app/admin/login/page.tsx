@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { Mail, Lock } from "lucide-react";
+import { Lock, User } from "lucide-react";
 
 export default function AdminLogin() {
   const [formData, setFormData] = useState({
@@ -56,29 +56,36 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="text-center">
-          <div className="mx-auto w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-            <Mail className="w-6 h-6 text-white" />
+    <div className="flex min-h-screen items-center justify-center bg-[linear-gradient(160deg,#EEF4F1_0%,#EAF0F8_45%,#F1F1EC_100%)] p-4 sm:p-6">
+      <Card className="w-full max-w-md rounded-3xl border-none shadow-[0_18px_40px_-24px_rgba(20,33,61,0.35)]">
+        <CardHeader className="text-center px-6 pt-8 sm:px-8">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 via-blue-500 to-[#6B8FD6]">
+            <Lock className="h-5 w-5 text-white" />
           </div>
-          <CardTitle className="text-2xl">Connexion Admin</CardTitle>
-          <CardDescription>
-            Connectez-vous à votre compte administrateur
+          <CardTitle
+            className="mt-4 text-[24px] text-[#14213D]"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Espace administration
+          </CardTitle>
+          <CardDescription className="text-[14px] text-[#4A5568]">
+            Connectez-vous avec votre compte administrateur ELVARRA
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="px-6 pb-8 sm:px-8">
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
-              <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
-                <p className="text-red-800 text-sm">{error}</p>
+              <div className="rounded-xl border border-[#F0D3C6] bg-[#FCEEE7] p-3">
+                <p className="text-[13px] text-[#C65D3B]">{error}</p>
               </div>
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="username">Nom d&apos;utilisateur</Label>
+              <Label htmlFor="username" className="text-[13px] text-[#14213D]">
+                Nom d&apos;utilisateur
+              </Label>
               <div className="relative">
-                <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                <User className="absolute left-3 top-3 h-4 w-4 text-[#5B6B82]" />
                 <Input
                   id="username"
                   name="username"
@@ -86,16 +93,18 @@ export default function AdminLogin() {
                   value={formData.username}
                   onChange={handleInputChange}
                   required
-                  className="pl-10"
+                  className="rounded-xl pl-10"
                   placeholder="Votre nom d'utilisateur"
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password">Mot de passe</Label>
+              <Label htmlFor="password" className="text-[13px] text-[#14213D]">
+                Mot de passe
+              </Label>
               <div className="relative">
-                <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                <Lock className="absolute left-3 top-3 h-4 w-4 text-[#5B6B82]" />
                 <Input
                   id="password"
                   name="password"
@@ -103,7 +112,7 @@ export default function AdminLogin() {
                   value={formData.password}
                   onChange={handleInputChange}
                   required
-                  className="pl-10"
+                  className="rounded-xl pl-10"
                   placeholder="Votre mot de passe"
                 />
               </div>
@@ -111,7 +120,7 @@ export default function AdminLogin() {
 
             <Button
               type="submit"
-              className="w-full"
+              className="w-full rounded-xl bg-[#14213D] text-white hover:bg-[#1c2d54]"
               disabled={isLoading}
             >
               {isLoading ? (

@@ -1,54 +1,53 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Expert d'assuré dégât des eaux | ELVARRA",
+  description:
+    "ELVARRA vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
   icons: {
-    icon: "",
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "",
-    description: "",
+    title: "Expert d'assuré dégât des eaux | ELVARRA",
+    description:
+      "ELVARRA vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
     images: [
       {
-        url: "",
+        url: "/og/degat-des-eaux.jpg",
         width: 1200,
         height: 630,
-        alt: "",
+        alt: "ELVARRA — Expert d'assuré dégât des eaux",
       },
     ],
     siteName: "Elvarra",
     type: "website",
-    url: "",
+    url: "https://elvarra.fr/sinistres/degat-des-eaux/",
     locale: "fr_FR",
     countryName: "France",
   },
   twitter: {
-    title: "",
-    description: "",
+    title: "Expert d'assuré dégât des eaux | ELVARRA",
+    description:
+      "ELVARRA vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
     images: [
       {
-        url: "",
+        url: "/og/degat-des-eaux.jpg",
         width: 1200,
         height: 630,
-        alt: "",
+        alt: "ELVARRA — Expert d'assuré dégât des eaux",
       },
     ],
   },
   alternates: {
-    canonical: "",
+    canonical: "https://elvarra.fr/sinistres/degat-des-eaux/",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
+    googleBot: { index: true, follow: true },
   },
-  themeColor: "#000000",
   appleWebApp: {
-    title: "",
+    title: "ELVARRA",
   },
 };
 
@@ -56,16 +55,13 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  themeColor: "#14213D",
 };
 
-export default function TemplateLayout({ // A Changer
+export default function DegatDesEauxLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <main className="bg-white rounded-xl shadow-lg">
-        {children}
-    </main>
-  );
+  return <>{children}</>;
 }

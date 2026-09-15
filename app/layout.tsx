@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
@@ -15,6 +15,13 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
   variable: "--font-body",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 
 export const metadata: Metadata = {
   title: "Expert d'assuré après un sinistre | ELVARRA",
