@@ -1,3 +1,5 @@
+'use client';
+
 import {
   IconFlame,
   IconDroplet,
@@ -6,11 +8,12 @@ import {
   IconHouse,
   IconBuilding,
   IconBriefcase,
-  IconSearchDoc,
   SkylineDecoration,
 } from '@/components/icons';
 import { ArrowRight } from 'lucide-react';
-import { Button, SectionLabel, DossierVisual, Accordion } from '@/components/PageUI';
+import { Button, SectionLabel, DossierVisual } from '@/components/PageUI';
+import { Accordion } from '@/components/Accordion'
+
 
 const ROLES = [
   {
@@ -494,9 +497,6 @@ export default function Home() {
                 expérience, chiffres ou cas clients — seront ajoutées après validation et
                 justification.
               </p>
-              <span className="mt-8 hidden xl:flex flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-[#D9A44E]">
-                <IconSearchDoc className="h-7 w-7" />
-              </span>
             </div>
             <ul className="flex flex-col gap-5">
               {WHY_POINTS.map((point) => (

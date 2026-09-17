@@ -186,7 +186,7 @@ export default function ParticuliersPage() {
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
               Présentez-nous votre situation et les échéances connues.
             </p>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#1F6F63]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#1F6F63] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#1F6F63]">
                 Parler de mon sinistre
                 <ArrowRight className="h-4 w-4" />

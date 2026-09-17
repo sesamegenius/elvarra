@@ -121,7 +121,7 @@ export default function IncendiePage() {
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
               Transmettez-nous la date, les premières pièces et les coordonnées utiles.
             </p>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#C65D3B]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#C65D3B] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#C65D3B]">
                 Faire analyser mon dossier incendie
                 <ArrowRight className="h-4 w-4" />

@@ -170,7 +170,7 @@ export default function ProfessionnelsPage() {
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
               Contactez ELVARRA dès que possible afin d&apos;organiser les premières étapes.
             </p>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#3D6BAD]">
                 Être accompagné après un sinistre professionnel
                 <ArrowRight className="h-4 w-4" />

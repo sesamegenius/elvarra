@@ -56,10 +56,9 @@ export default function Footer() {
         <div className="mt-14 flex flex-col gap-4 border-t border-[#E1E4E5] pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[13px] text-[#8A94A3]">© {new Date().getFullYear()} ELVARRA. Tous droits réservés.</p>
           <div className="flex justify-center lg:justify-start lg:flex-wrap gap-x-6 gap-y-2 text-[13px] text-[#8A94A3]">
-            <a href="/mentions-legales/" className="hover:text-[#14213D]">Mentions légales</a>
-            <a href="/politique-de-confidentialite/" className="hover:text-[#14213D]">Politique de confidentialité</a>
-            <a href="/politique-cookies/" className="hover:text-[#14213D]">Politique cookies</a>
-            <button className="hover:text-[#14213D]">Gérer mes cookies</button>
+            <a href="/mentions" className="hover:text-[#14213D]">Mentions légales</a>
+            <a href="/privacy" className="hover:text-[#14213D]">Politique de confidentialité</a>
+            <a href="/cookies" className="hover:text-[#14213D]">Politique cookies</a>
           </div>
         </div>
       </div>

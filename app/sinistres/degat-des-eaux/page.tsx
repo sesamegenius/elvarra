@@ -91,7 +91,7 @@ export default function DegatDesEauxPage() {
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
               Expliquez-nous ce qui s&apos;est passé et l&apos;état d&apos;avancement du dossier.
             </p>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#3D6BAD]">
                 Parler à ELVARRA
                 <ArrowRight className="h-4 w-4" />

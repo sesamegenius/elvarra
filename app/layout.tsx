@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${fraunces.variable} ${inter.variable} bg-[linear-gradient(160deg,#EEF4F1_0%,#EAF0F8_45%,#F1F1EC_100%)] py-8`}
+        className={`${fraunces.variable} ${inter.variable} bg-[linear-gradient(160deg,#EEF4F1_0%,#EAF0F8_45%,#F1F1EC_100%)] pt-8`}
         style={{ fontFamily: "var(--font-body)" }}
       >
         <Header />

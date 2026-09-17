@@ -103,7 +103,7 @@ export default function EvenementsClimatiquesPage() {
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
               Contactez ELVARRA pour examiner les prochaines étapes.
             </p>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#5C6F8A]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#5C6F8A] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#5C6F8A]">
                 Être rappelé
                 <ArrowRight className="h-4 w-4" />

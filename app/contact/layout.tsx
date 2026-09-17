@@ -1,17 +1,17 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact - Sésame",
+  title: "Contact - Elvarra",
   description: "Contactez-nous pour toute question ou demande de service.",
   icons: {
-    icon: "/sesamelogo.png",
+    icon: "/ElvarraLogo.png",
   },
   openGraph: {
-    title: "Contact - Sésame",
+    title: "Contact - Elvarra",
     description: "Contactez-nous pour toute question ou demande de service.",
     images: [
       {
-        url: "/sesamelogo.png",
+        url: "/ElvarraLogo.png",
         width: 1200,
         height: 630,
         alt: "Contact - Sésame",
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Contact - Sésame",
+    title: "Contact - Elvarra",
     description: "Contactez-nous pour toute question ou demande de service.",
     images: [
       {
-        url: "/sesamelogo.png",
+        url: "/ElvarraLogo.png",
         width: 1200,
         height: 630,
         alt: "Contact - Sésame",
