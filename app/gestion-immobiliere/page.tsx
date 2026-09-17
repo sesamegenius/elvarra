@@ -191,29 +191,128 @@ export default function GestionImmobiliereePage() {
         </section>
 
         {/* BOUCLE FERMEE */}
-        <section id="parcours" className="px-6 pb-16 md:px-14">
-          <SectionLabel tone="amber">Le parcours d&apos;un sinistre</SectionLabel>
-          <h2 className="max-w-[600px] text-[26px] leading-tight text-[#14213D] lg:text-[30px]" style={{ fontFamily: "var(--font-display)" }}>
-            La boucle fermée du sinistre
-          </h2>
+        {/* BOUCLE FERMEE */}
+<section id="parcours" className="px-6 pb-16 md:px-14">
+  <SectionLabel tone="amber">Le parcours d&apos;un sinistre</SectionLabel>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-3">
-            {BOUCLE.map((step, i) => (
-              <div key={step} className="flex items-center gap-3">
-                <span className="rounded-full border border-[#E9D3A0] bg-white px-4 py-2 text-[14px] text-[#8A6A26]">
-                  {step}
-                </span>
-                {i < BOUCLE.length - 1 && (
-                  <ArrowRight className="h-4 w-4 text-[#D9A44E] shrink-0" />
-                )}
-              </div>
-            ))}
+  <h2
+    className="max-w-[600px] text-[26px] leading-tight text-[#14213D] lg:text-[30px]"
+    style={{ fontFamily: "var(--font-display)" }}
+  >
+    La boucle fermée du sinistre
+  </h2>
+
+  {/* VERSION MOBILE */}
+  <div className="mt-10 flex flex-col md:hidden">
+    {BOUCLE.map((step, i) => (
+      <div key={step} className="flex items-stretch">
+        <div className="flex w-8 flex-col items-center">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#E9D3A0] bg-white text-[12px] font-medium text-[#8A6A26]">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+
+          {i < BOUCLE.length - 1 && (
+            <span className="my-1 h-full min-h-6 w-px bg-[#E9D3A0]" />
+          )}
+        </div>
+
+        <div className="pb-5 pl-4">
+          <div className="rounded-xl border border-[#E9D3A0] bg-white px-4 py-2.5 text-[14px] text-[#8A6A26]">
+            {step}
           </div>
+        </div>
+      </div>
+    ))}
 
-          <p className="mt-6 max-w-[640px] text-[14px] leading-relaxed text-[#4A5568]">
-            Le périmètre exact est défini avec le partenaire en fonction de son organisation, de ses mandats et des situations couvertes.
-          </p>
-        </section>
+    <div className="mt-1 flex items-center gap-3 pl-1">
+      <span className="h-px w-7 bg-[#D9A44E]" />
+      <span className="text-[12px] text-[#B08A45]">
+        Retour au début du parcours
+      </span>
+    </div>
+  </div>
+
+  {/* VERSION CERCLE */}
+  <div className="relative mx-auto mt-12 hidden h-[560px] w-full max-w-[760px] md:block">
+    {/* Cercle principal */}
+    <div className="absolute left-1/2 top-1/2 h-[410px] w-[410px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#E9D3A0] bg-white/40" />
+
+    {/* Cercle intérieur */}
+    <div className="absolute left-1/2 top-1/2 flex h-[190px] w-[190px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-[#14213D] text-center shadow-[0_15px_45px_rgba(20,33,61,0.12)]">
+      <span className="text-[11px] uppercase tracking-[0.18em] text-[#BFE0D6]">
+        ELVARRA
+      </span>
+
+      <span
+        className="mt-2 max-w-[130px] text-[21px] leading-tight text-white"
+        style={{ fontFamily: "var(--font-display)" }}
+      >
+        Boucle fermée
+      </span>
+
+      <span className="mt-2 text-[12px] text-[#D7DFEA]">
+        du sinistre
+      </span>
+    </div>
+
+    {/* Éléments autour du cercle */}
+    {BOUCLE.map((step, i) => {
+      const angle = (360 / BOUCLE.length) * i - 90;
+      const radius = 245;
+
+      const x = Math.cos((angle * Math.PI) / 180) * radius;
+      const y = Math.sin((angle * Math.PI) / 180) * radius;
+
+      return (
+        <div
+          key={step}
+          className="absolute left-1/2 top-1/2"
+          style={{
+            transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
+          }}
+        >
+          <div className="flex min-w-[130px] max-w-[155px] flex-col items-center">
+            <span className="mb-2 flex h-7 w-7 items-center justify-center rounded-full bg-[#FEF1D0] text-[10px] text-[#8A6A26]">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+
+            <span className="rounded-2xl border border-[#E9D3A0] bg-white px-4 py-2.5 text-center text-[13px] leading-snug text-[#8A6A26] shadow-[0_6px_20px_rgba(20,33,61,0.04)]">
+              {step}
+            </span>
+          </div>
+        </div>
+      );
+    })}
+
+    {/* Flèches circulaires */}
+    <div className="pointer-events-none absolute inset-0">
+      {BOUCLE.map((_, i) => {
+        const angle = (360 / BOUCLE.length) * i - 90;
+        const radius = 205;
+
+        const x = Math.cos((angle * Math.PI) / 180) * radius;
+        const y = Math.sin((angle * Math.PI) / 180) * radius;
+
+        return (
+          <div
+            key={`arrow-${i}`}
+            className="absolute left-1/2 top-1/2"
+            style={{
+              transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) rotate(${angle + 90}deg)`,
+            }}
+          >
+            <ArrowRight className="h-5 w-5 text-[#D9A44E]" />
+          </div>
+        );
+      })}
+    </div>
+  </div>
+
+  <p className="mt-6 max-w-[640px] text-[14px] leading-relaxed text-[#4A5568]">
+    Le périmètre exact est défini avec le partenaire en fonction de son
+    organisation, de ses mandats et des situations couvertes.
+  </p>
+</section>
 
         {/* CE QUE LE SERVICE COMPREND */}
         <section className="px-6 pb-16 md:px-14">
@@ -232,7 +331,7 @@ export default function GestionImmobiliereePage() {
           : ""
       }`}
     >
-      <div className="flex items-center gap-3">
+      <div className="flex items-center justify-center sm:justify-start gap-3">
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FEF1D0] text-[#8A6A26]">
           <e.icon className="h-5 w-5" />
         </span>

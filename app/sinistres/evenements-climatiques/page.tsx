@@ -86,7 +86,7 @@ export default function EvenementsClimatiquesPage() {
             {A_DISTINGUER.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-[#C9D2DE] bg-[#EEF1F5] px-4 py-2 text-[14px] text-[#3E4A5C]"
+                className="rounded-full border border-[#C9D2DE] bg-[#EEF1F5] px-4 py-2 text-[14px] text-[#3E4A5C] w-full sm:w-fit"
               >
                 {item}
               </span>

@@ -139,7 +139,7 @@ export default function ParticuliersPage() {
 
               <div className="flex flex-wrap gap-3 content-start">
                 {POSTES.map((p) => (
-                  <span key={p} className="rounded-full border border-[#BFE0D6] bg-[#EEF4F1] px-4 py-2 text-[14px] text-[#1F6F63]">
+                  <span key={p} className="rounded-full border border-[#BFE0D6] bg-[#EEF4F1] px-4 py-2 text-[14px] text-[#1F6F63] w-full sm:w-fit">
                     {p}
                   </span>
                 ))}
@@ -157,8 +157,8 @@ export default function ParticuliersPage() {
 
           <div className="mt-10 grid grid-cols-1 gap-4 rounded-3xl bg-white p-8 sm:grid-cols-2 md:p-12">
             {ACCOMPAGNEMENT.map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-[#1F6F63]" />
+              <div key={item} className="flex flex-col justify-center items-center sm:justify-start sm:items-start sm:flex-row items-start gap-3">
+                <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-[#1F6F63] w-full sm:w-fit" />
                 <p className="text-[15px] leading-relaxed text-[#3A4657]">{item}</p>
               </div>
             ))}

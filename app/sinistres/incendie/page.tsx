@@ -104,7 +104,7 @@ export default function IncendiePage() {
             {INTERVENTION.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-[#E9C4B4] bg-[#FBEAE4] px-4 py-2 text-[14px] text-[#8A3E24]"
+                className="rounded-full border border-[#E9C4B4] bg-[#FBEAE4] px-4 py-2 text-[14px] text-[#8A3E24] w-full sm:w-fit"
               >
                 {item}
               </span>

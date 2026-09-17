@@ -110,7 +110,7 @@ export default function ProfessionnelsPage() {
           <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {ENJEUX.map((e) => (
               <div key={e.title} className="rounded-2xl bg-white p-6">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#EAF0F8] text-[#3D6BAD]">
+                <span className="flex h-11 w-full sm:w-11 items-center justify-center rounded-xl bg-[#EAF0F8] text-[#3D6BAD]">
                   <e.icon className="h-5 w-5" />
                 </span>
                 <p className="mt-4 text-[16px] text-[#14213D]" style={{ fontFamily: "var(--font-display)" }}>
@@ -136,7 +136,7 @@ export default function ProfessionnelsPage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-2 justify-center md:justify-start">
               {STAKEHOLDERS.map((s) => (
-                <span key={s} className="rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-[13px] text-white">
+                <span key={s} className="rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-[13px] text-white w-full sm:w-fit">
                   {s}
                 </span>
               ))}
