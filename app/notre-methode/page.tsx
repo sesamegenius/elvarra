@@ -1,5 +1,6 @@
 import { ClipboardList, ArrowRight } from 'lucide-react';
 import { Button, SectionLabel } from '@/components/PageUI';
+import { Arrow } from '@radix-ui/react-tooltip';
 
 const STEPS = [
   { title: 'Analyse', text: 'Nous reprenons la chronologie, les circonstances, les premières démarches et les échéances.' },
@@ -45,22 +46,48 @@ export default function NotreMethodePage() {
 
         {/* ETAPES */}
         <section className="px-6 pb-16 md:px-14">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-8 rounded-3xl bg-white p-8 sm:grid-cols-2 md:p-12 lg:grid-cols-3">
-            {STEPS.map((step, i) => (
-              <div key={step.title} className="flex flex-col xl:flex-row gap-4">
-                <span className="text-[22px] text-[#BFE0D6] shrink-0" style={{ fontFamily: 'var(--font-display)' }}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <div>
-                  <p className="text-[17px] text-[#14213D]" style={{ fontFamily: 'var(--font-display)' }}>
-                    {step.title}
-                  </p>
-                  <p className="mt-2 text-[14px] leading-relaxed text-[#4A5568]">{step.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+  <div className="grid grid-cols-1 gap-x-8 gap-y-8 rounded-3xl bg-white p-8 sm:grid-cols-2 md:p-12 lg:grid-cols-3">
+    {STEPS.map((step, i) => (
+      <div key={step.title} className="flex flex-col gap-4 xl:flex-row">
+        <span
+          className="shrink-0 text-[22px] text-[#BFE0D6]"
+          style={{ fontFamily: 'var(--font-display)' }}
+        >
+          {String(i + 1).padStart(2, '0')}
+        </span>
+
+        <div>
+          <p
+            className="text-[17px] text-[#14213D]"
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
+            {step.title}
+          </p>
+
+          <p className="mt-2 text-[14px] leading-relaxed text-[#4A5568]">
+            {step.text}
+          </p>
+        </div>
+      </div>
+    ))}
+
+    {/* CTA */}
+    <a
+      href="/contact"
+      className="hidden items-center justify-center rounded-2xl bg-[#14213D] p-6 text-center text-white transition-colors hover:bg-[#1C2D50] sm:flex sm:col-span-1 lg:col-span-2"
+    >
+      <span
+        className="text-[18px] h-fit flex items-center justify-center "
+        style={{ fontFamily: 'var(--font-display)' }}
+      >
+        Parlons de votre projet
+        <ArrowRight />
+      </span>
+    </a>
+  </div>
+</section>
+
+
 
         {/* CTA FINAL */}
         <section className="px-6 pb-20 md:px-14">
@@ -68,7 +95,7 @@ export default function NotreMethodePage() {
             <h2 className="mx-auto max-w-[560px] text-[26px] leading-tight text-white lg:text-[32px]" style={{ fontFamily: 'var(--font-display)' }}>
               Vous souhaitez savoir comment cette méthode s&apos;applique à votre dossier ?
             </h2>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#1F6F63]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#1F6F63] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#1F6F63]">
                 Échanger avec ELVARRA
                 <ArrowRight className="h-4 w-4" />

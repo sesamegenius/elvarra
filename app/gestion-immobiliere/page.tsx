@@ -219,27 +219,51 @@ export default function GestionImmobiliereePage() {
         <section className="px-6 pb-16 md:px-14">
           <SectionLabel tone="sky">Ce que le service peut comprendre</SectionLabel>
           <h2 className="max-w-[600px] text-[26px] leading-tight text-[#14213D] lg:text-[30px]" style={{ fontFamily: "var(--font-display)" }}>
-            Sept étapes, du signalement à la clôture
+            7 étapes, du signalement à la clôture
           </h2>
 
           <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {ETAPES_SERVICE.map((e, i) => (
-              <div key={e.title} className="rounded-2xl bg-white p-6">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FEF1D0] text-[#8A6A26]">
-                    <e.icon className="h-5 w-5" />
-                  </span>
-                  <span className="text-[13px] text-[#D9A44E]" style={{ fontFamily: "var(--font-display)" }}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                </div>
-                <p className="mt-4 text-[16px] text-[#14213D]" style={{ fontFamily: "var(--font-display)" }}>
-                  {e.title}
-                </p>
-                <p className="mt-2 text-[14px] leading-relaxed text-[#4A5568]">{e.text}</p>
-              </div>
-            ))}
-          </div>
+  {ETAPES_SERVICE.map((e, i) => (
+    <div
+      key={e.title}
+      className={`rounded-2xl bg-white p-6 ${
+        i === ETAPES_SERVICE.length - 1
+          ? "lg:col-span-3 sm:col-span-2 lg:flex lg:flex-col lg:items-center lg:text-center"
+          : ""
+      }`}
+    >
+      <div className="flex items-center gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FEF1D0] text-[#8A6A26]">
+          <e.icon className="h-5 w-5" />
+        </span>
+
+        <span
+          className="text-[13px] text-[#D9A44E]"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          {String(i + 1).padStart(2, "0")}
+        </span>
+      </div>
+
+      <p
+        className="mt-4 text-[16px] text-[#14213D]"
+        style={{ fontFamily: "var(--font-display)" }}
+      >
+        {e.title}
+      </p>
+
+      <p
+        className={`mt-2 text-[14px] leading-relaxed text-[#4A5568] ${
+          i === ETAPES_SERVICE.length - 1
+            ? "lg:max-w-[650px]"
+            : ""
+        }`}
+      >
+        {e.text}
+      </p>
+    </div>
+  ))}
+</div>
         </section>
 
         {/* AUDIENCES */}

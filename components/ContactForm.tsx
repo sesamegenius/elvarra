@@ -70,7 +70,7 @@ function PillGroup({
         return (
           <label
             key={opt.value}
-            className={`cursor-pointer rounded-full border px-4 py-2 text-[14px] transition-colors ${
+            className={`cursor-pointer w-full lg:w-fit rounded-full border px-4 py-2 text-[14px] transition-colors ${
               selected
                 ? "border-[#1F6F63] bg-[#1F6F63] text-white"
                 : "border-[#DCE1DD] bg-white text-[#4A5568] hover:border-[#1F6F63]/50"

@@ -27,7 +27,7 @@ export default function ContactPage() {
 
         {/* FORMULAIRE + COORDONNEES */}
         <section className="px-6 pb-20 md:px-14">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
+          <div className="grid grid-cols-1 xl:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
 
             <ContactForm showCard title="" description="" />
 
