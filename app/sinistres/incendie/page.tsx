@@ -38,7 +38,7 @@ export default function IncendiePage() {
                 Après un incendie, protégez les personnes, les preuves et votre dossier
               </h1>
               <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-[#4A5568]">
-                Un incendie peut affecter le bâtiment, les biens, les équipements et l&apos;usage des lieux. ELVARRA vous aide à organiser un dossier complet avant les étapes déterminantes de l&apos;expertise.
+                Un incendie peut affecter le bâtiment, les biens, les équipements et l&apos;usage des lieux. Elvarra vous aide à organiser un dossier complet avant les étapes déterminantes de l&apos;expertise.
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">
@@ -49,9 +49,7 @@ export default function IncendiePage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#C65D3B]/10 text-[#C65D3B]">
-                <IconFlame className="h-16 w-16" />
-              </div>
+                <img src="/incendiemaison.jpeg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -93,11 +91,11 @@ export default function IncendiePage() {
           </div>
         </section>
 
-        {/* COMMENT ELVARRA INTERVIENT */}
+        {/* COMMENT Elvarra INTERVIENT */}
         <section className="px-6 pb-16 md:px-14">
           <SectionLabel tone="teal">Notre intervention</SectionLabel>
           <h2 className="max-w-[600px] text-[26px] leading-tight text-[#14213D] lg:text-[30px]" style={{ fontFamily: "var(--font-display)" }}>
-            Comment ELVARRA intervient
+            Comment Elvarra intervient
           </h2>
 
           <div className="mt-10 flex flex-wrap gap-3">

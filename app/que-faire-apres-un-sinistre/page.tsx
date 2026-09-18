@@ -32,7 +32,7 @@ export default function QueFaireApresUnSinistrePage() {
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">
-                  J&apos;ai subi un sinistre — parler à ELVARRA
+                  J&apos;ai subi un sinistre — parler à Elvarra
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Button>
@@ -91,7 +91,7 @@ export default function QueFaireApresUnSinistrePage() {
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#14213D]">
               <span className="flex items-center gap-2 text-[#14213D]">
-                Parler à ELVARRA
+                Parler à Elvarra
                 <ArrowRight className="h-4 w-4" />
               </span>
             </Button>

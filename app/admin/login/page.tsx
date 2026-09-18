@@ -69,7 +69,7 @@ export default function AdminLogin() {
             Espace administration
           </CardTitle>
           <CardDescription className="text-[14px] text-[#4A5568]">
-            Connectez-vous avec votre compte administrateur ELVARRA
+            Connectez-vous avec votre compte administrateur Elvarra
           </CardDescription>
         </CardHeader>
         <CardContent className="px-6 pb-8 sm:px-8">

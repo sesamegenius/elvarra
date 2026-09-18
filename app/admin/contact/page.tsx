@@ -21,7 +21,7 @@ type ObjetDemande =
   | "EXPERTISE_PROGRAMMEE"
   | "PROPOSITION_RECUE"
   | "DESACCORD"
-  | "ELVARRA_GESTION"
+  | "Elvarra_GESTION"
   | "AUTRE";
 type TypeSinistre = "INCENDIE" | "DEGAT_DES_EAUX" | "EVENEMENT_CLIMATIQUE" | "AUTRE" | "NON_APPLICABLE";
 type ExpertiseStatut = "NON" | "PROGRAMMEE" | "REALISEE" | "NE_SAIT_PAS";
@@ -79,7 +79,7 @@ const objetLabels: Record<ObjetDemande, string> = {
   EXPERTISE_PROGRAMMEE: "Expertise programmée",
   PROPOSITION_RECUE: "Proposition reçue",
   DESACCORD: "Désaccord",
-  ELVARRA_GESTION: "Elvarra Gestion",
+  Elvarra_GESTION: "Elvarra Gestion",
   AUTRE: "Autre demande",
 };
 

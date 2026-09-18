@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { Button, SectionLabel } from "@/components/PageUI";
-import { IconHouse } from "@/components/icons";
-import { ArrowRight, CircleCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Expert d'assuré pour particuliers | ELVARRA",
-  description:
-    "Après un sinistre habitation, ELVARRA vous aide à documenter vos dommages, préparer l'expertise et défendre votre dossier.",
-};
+const FROM = [0x5b, 0x90, 0xd6];
+const TO = [0x1f, 0x6f, 0x63];
+ 
+const mix = (t: number) =>
+  `rgb(${FROM.map((c, k) => Math.round(c + (TO[k] - c) * t)).join(',')})`;
+
 
 const MOMENTS = [
   {
@@ -51,6 +50,9 @@ const ACCOMPAGNEMENT = [
   "Échanges techniques et suivi du dossier",
 ];
 
+const last = ACCOMPAGNEMENT.length - 1;
+
+
 export default function ParticuliersPage() {
   return (
     <main className="bg-[linear-gradient(160deg,#EEF4F1_0%,#EAF0F8_45%,#F1F1EC_100%)] pb-16 pt-6 md:pb-24 md:pt-10 text-center md:text-left">
@@ -65,7 +67,7 @@ export default function ParticuliersPage() {
                 Après un sinistre dans votre logement, faites-vous accompagner par votre propre expert
               </h1>
               <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-[#4A5568]">
-                Incendie, dégât des eaux ou événement climatique : ELVARRA vous aide à comprendre les démarches, rassembler les preuves, évaluer les dommages et défendre vos intérêts dans le cadre du dossier d&apos;indemnisation.
+                Incendie, dégât des eaux ou événement climatique : Elvarra vous aide à comprendre les démarches, rassembler les preuves, évaluer les dommages et défendre vos intérêts dans le cadre du dossier d&apos;indemnisation.
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">
@@ -76,9 +78,7 @@ export default function ParticuliersPage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#1F6F63]/10 text-[#1F6F63]">
-                <IconHouse className="h-16 w-16" />
-              </div>
+                <img src="/AccompagnementExpert.jpg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -93,7 +93,7 @@ export default function ParticuliersPage() {
               Après un sinistre, il faut gérer l&apos;urgence, les démarches, les documents, les échanges avec l&apos;assurance et parfois un logement devenu difficilement habitable. Dans ce contexte, il est compliqué de savoir si tous les dommages ont été identifiés et correctement présentés.
             </p>
             <p className="mt-4 max-w-[680px] text-[16px] leading-relaxed text-[#14213D]" style={{ fontFamily: "var(--font-display)" }}>
-              ELVARRA vous apporte une méthode et un interlocuteur.
+              Elvarra vous apporte une méthode et un interlocuteur.
             </p>
           </div>
         </section>
@@ -150,20 +150,51 @@ export default function ParticuliersPage() {
 
         {/* ACCOMPAGNEMENT */}
         <section className="px-6 pb-16 md:px-14">
+      <div className="grid gap-8 rounded-3xl bg-white p-6 text-left sm:p-8 lg:grid-cols-[5fr_7fr] lg:gap-14 lg:p-10">
+        {/* TITRE */}
+        <div>
           <SectionLabel tone="sky">Notre accompagnement</SectionLabel>
-          <h2 className="max-w-[600px] text-[26px] leading-tight text-[#14213D] lg:text-[30px]" style={{ fontFamily: "var(--font-display)" }}>
+          <h2
+            className="max-w-[440px] text-[26px] leading-tight text-[#14213D] lg:text-[30px]"
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
             Un déroulé pensé pour ne rien laisser de côté
           </h2>
-
-          <div className="mt-10 grid grid-cols-1 gap-4 rounded-3xl bg-white p-8 sm:grid-cols-2 md:p-12">
-            {ACCOMPAGNEMENT.map((item) => (
-              <div key={item} className="flex flex-col justify-center items-center sm:justify-start sm:items-start sm:flex-row items-start gap-3">
-                <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-[#1F6F63] w-full sm:w-fit" />
-                <p className="text-[15px] leading-relaxed text-[#3A4657]">{item}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        </div>
+ 
+        {/* FRISE */}
+        <ol>
+          {ACCOMPAGNEMENT.map((item, i) => (
+            <li key={item} className="relative flex items-start gap-4 pb-5 last:pb-0">
+              {/* Segment de fil : du centre de cette pastille au centre de la suivante */}
+              {i < last && (
+                <span
+                  aria-hidden="true"
+                  className="absolute left-[17px] top-[18px] h-full w-0.5"
+                  style={{
+                    background: `linear-gradient(to bottom, ${mix(i / last)}, ${mix(
+                      (i + 1) / last
+                    )})`,
+                  }}
+                />
+              )}
+ 
+              {/* Pastille numérotée : la dernière passe au vert */}
+              <span
+                className={`relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[14px] text-white ring-4 ring-white ${
+                  i === last ? 'bg-[#1F6F63]' : 'bg-[#14213D]'
+                }`}
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                {i + 1}
+              </span>
+ 
+              <p className="pt-1.5 text-[15px] leading-relaxed text-[#3A4657]">{item}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
 
         {/* PROPRIETAIRE / LOCATAIRE */}
         <section className="px-6 pb-16 md:px-14">
@@ -172,7 +203,7 @@ export default function ParticuliersPage() {
               Propriétaire, locataire ou bailleur ?
             </h2>
             <p className="mt-5 max-w-[680px] text-[16px] leading-relaxed text-[#4A5568]">
-              La qualité de l&apos;occupant et la propriété des éléments endommagés peuvent influer sur le traitement du dossier. ELVARRA commence par clarifier votre situation, les contrats concernés et le rôle de chacun. Nous ne présumons pas de la prise en charge avant d&apos;avoir examiné les faits et les documents.
+              La qualité de l&apos;occupant et la propriété des éléments endommagés peuvent influer sur le traitement du dossier. Elvarra commence par clarifier votre situation, les contrats concernés et le rôle de chacun. Nous ne présumons pas de la prise en charge avant d&apos;avoir examiné les faits et les documents.
             </p>
           </div>
         </section>

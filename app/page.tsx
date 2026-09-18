@@ -29,7 +29,7 @@ const ROLES = [
     text: 'Chiffrent ou réalisent les travaux de remise en état.',
   },
   {
-    title: "ELVARRA, l'expert d'assuré",
+    title: "Elvarra, l'expert d'assuré",
     text: 'Intervient à vos côtés pour analyser, documenter, évaluer et défendre votre préjudice.',
     highlight: true,
   },
@@ -58,7 +58,7 @@ const AUDIENCES = [
   {
     icon: IconHouse,
     title: 'Particuliers',
-    text: 'Votre logement et vos biens ont été touchés ? ELVARRA vous aide à comprendre les démarches et à présenter un dossier documenté.',
+    text: 'Votre logement et vos biens ont été touchés ? Elvarra vous aide à comprendre les démarches et à présenter un dossier documenté.',
     cta: 'Accompagnement des particuliers',
     href: '/particuliers/',
   },
@@ -72,8 +72,8 @@ const AUDIENCES = [
   {
     icon: IconBriefcase,
     title: 'Gestionnaires immobiliers',
-    text: "Vous gérez un parc de logements ou d'actifs ? ELVARRA Gestion structure le suivi des sinistres, de leur signalement à leur clôture documentée.",
-    cta: 'Découvrir ELVARRA Gestion',
+    text: "Vous gérez un parc de logements ou d'actifs ? Elvarra Gestion structure le suivi des sinistres, de leur signalement à leur clôture documentée.",
+    cta: 'Découvrir Elvarra Gestion',
     href: '/gestion-immobiliere/',
   },
 ];
@@ -119,15 +119,15 @@ const WHY_POINTS = [
 
 const FAQS = [
   {
-    q: 'Quand contacter ELVARRA ?',
+    q: 'Quand contacter Elvarra ?',
     a: "Le plus tôt possible, idéalement avant une étape importante de l'expertise ou avant d'accepter une proposition. Un dossier déjà engagé peut néanmoins être étudié.",
   },
   {
     q: "Puis-je appeler après le passage de l'expert ?",
-    a: "Oui. ELVARRA examinera l'état du dossier, les documents disponibles et les possibilités d'intervention.",
+    a: "Oui. Elvarra examinera l'état du dossier, les documents disponibles et les possibilités d'intervention.",
   },
   {
-    q: 'ELVARRA intervient-il pour les entreprises ?',
+    q: 'Elvarra intervient-il pour les entreprises ?',
     a: 'Oui, selon la nature du sinistre, les garanties et le périmètre de mission convenu.',
   },
   {
@@ -154,7 +154,7 @@ export default function Home() {
                 Vous avez subi un sinistre. Qui défend vos intérêts ?
               </h1>
               <p className="mt-6 max-w-[540px] text-[17px] leading-relaxed text-[#4A5568]">
-                ELVARRA est votre expert d&apos;assuré. Nous vous accompagnons dans l&apos;analyse de votre
+                Elvarra est votre expert d&apos;assuré. Nous vous accompagnons dans l&apos;analyse de votre
                 situation, l&apos;évaluation de vos dommages et la défense de votre dossier
                 d&apos;indemnisation après un sinistre habitation ou professionnel.
               </p>
@@ -222,7 +222,7 @@ export default function Home() {
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
   {ROLES.map((role) => {
-    const isElvarra = role.title === "ELVARRA, l'expert d'assuré";
+    const isElvarra = role.title === "Elvarra, l'expert d'assuré";
 
     return (
       <div
@@ -298,7 +298,7 @@ export default function Home() {
                 <p className="mt-5 text-[16px] leading-relaxed text-[#4A5568] max-w-[480px]">
                   Il faut parfois identifier l'ensemble des dommages, rechercher les justificatifs,
                   comprendre les garanties, évaluer des postes différents et préparer les opérations
-                  d'expertise. ELVARRA peut intervenir pour :
+                  d'expertise. Elvarra peut intervenir pour :
                 </p>
               </div>
               <ul className="flex flex-col gap-3">
@@ -326,7 +326,7 @@ export default function Home() {
         {/* METHODE */}
         <section className="px-6 pb-20 md:px-14">
           <div className="max-w-[680px]">
-            <SectionLabel tone="teal">La méthode ELVARRA</SectionLabel>
+            <SectionLabel tone="teal">La méthode Elvarra</SectionLabel>
             <h2 className="text-[28px] leading-tight text-[#14213D] lg:text-[34px]" style={{ fontFamily: 'var(--font-display)' }}>
               Une méthode en six étapes, du premier échange à la clôture
             </h2>
@@ -482,13 +482,13 @@ export default function Home() {
 </div>
         </section>
 
-        {/* POURQUOI ELVARRA — inversion sombre, fondue en haut et en bas (pas de séparateur net) */}
+        {/* POURQUOI Elvarra — inversion sombre, fondue en haut et en bas (pas de séparateur net) */}
         <section
           className="px-6 py-28 md:px-14 md:py-32 bg-gradient-to-b from-[#14213D] via-[#14213D] to-[#14213D] rounded-xl"
         >
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
             <div>
-              <SectionLabel tone="amber">Pourquoi ELVARRA ?</SectionLabel>
+              <SectionLabel tone="amber">Pourquoi Elvarra ?</SectionLabel>
               <h2 className="text-[28px] leading-tight text-white lg:text-[34px]" style={{ fontFamily: 'var(--font-display)' }}>
                 Un dossier documenté, une méthode claire, un interlocuteur identifié
               </h2>
@@ -539,12 +539,12 @@ export default function Home() {
               Un sinistre ? Ne restez pas seul face à votre dossier.
             </h2>
             <p className="mx-auto mt-5 max-w-[480px] text-[16px] leading-relaxed text-white">
-              Expliquez-nous votre situation. Nous vous indiquerons si et comment ELVARRA peut
+              Expliquez-nous votre situation. Nous vous indiquerons si et comment Elvarra peut
               intervenir.
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#14213D]">
             <span className="flex items-center gap-2 text-[#14213D]">
-    Parler à un expert ELVARRA
+    Parler à un expert Elvarra
     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
   </span>
             </Button>

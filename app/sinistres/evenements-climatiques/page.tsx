@@ -46,9 +46,7 @@ export default function EvenementsClimatiquesPage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#5C6F8A]/10 text-[#5C6F8A]">
-                <CloudLightning className="h-16 w-16" />
-              </div>
+                <img src="/tempete-en-mer.jpg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -101,7 +99,7 @@ export default function EvenementsClimatiquesPage() {
               Vous devez agir vite sans fragiliser votre dossier ?
             </h2>
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
-              Contactez ELVARRA pour examiner les prochaines étapes.
+              Contactez Elvarra pour examiner les prochaines étapes.
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#5C6F8A] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#5C6F8A]">

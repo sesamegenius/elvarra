@@ -1,22 +1,22 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Dommages après événement climatique | ELVARRA",
+  title: "Dommages après événement climatique | Elvarra",
   description:
-    "Tempête, grêle ou fortes pluies : ELVARRA vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
+    "Tempête, grêle ou fortes pluies : Elvarra vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Dommages après événement climatique | ELVARRA",
+    title: "Dommages après événement climatique | Elvarra",
     description:
-      "Tempête, grêle ou fortes pluies : ELVARRA vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
+      "Tempête, grêle ou fortes pluies : Elvarra vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
     images: [
       {
         url: "/og/evenements-climatiques.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Dommages après événement climatique",
+        alt: "Elvarra — Dommages après événement climatique",
       },
     ],
     siteName: "Elvarra",
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Dommages après événement climatique | ELVARRA",
+    title: "Dommages après événement climatique | Elvarra",
     description:
-      "Tempête, grêle ou fortes pluies : ELVARRA vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
+      "Tempête, grêle ou fortes pluies : Elvarra vous accompagne pour documenter et défendre votre dossier selon vos garanties.",
     images: [
       {
         url: "/og/evenements-climatiques.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Dommages après événement climatique",
+        alt: "Elvarra — Dommages après événement climatique",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

@@ -1,13 +1,13 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "La méthode ELVARRA après sinistre",
-  description: "De l'analyse au suivi du dossier, découvrez les étapes de l'accompagnement ELVARRA.",
+  title: "La méthode Elvarra après sinistre",
+  description: "De l'analyse au suivi du dossier, découvrez les étapes de l'accompagnement Elvarra.",
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "La méthode ELVARRA après sinistre",
-    description: "De l'analyse au suivi du dossier, découvrez les étapes de l'accompagnement ELVARRA.",
-    images: [{ url: "/og/notre-methode.jpg", width: 1200, height: 630, alt: "ELVARRA — Notre méthode" }],
+    title: "La méthode Elvarra après sinistre",
+    description: "De l'analyse au suivi du dossier, découvrez les étapes de l'accompagnement Elvarra.",
+    images: [{ url: "/og/notre-methode.jpg", width: 1200, height: 630, alt: "Elvarra — Notre méthode" }],
     siteName: "Elvarra",
     type: "website",
     url: "https://elvarra.fr/notre-methode/",
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "La méthode ELVARRA après sinistre",
-    description: "De l'analyse au suivi du dossier, découvrez les étapes de l'accompagnement ELVARRA.",
-    images: [{ url: "/og/notre-methode.jpg", width: 1200, height: 630, alt: "ELVARRA — Notre méthode" }],
+    title: "La méthode Elvarra après sinistre",
+    description: "De l'analyse au suivi du dossier, découvrez les étapes de l'accompagnement Elvarra.",
+    images: [{ url: "/og/notre-methode.jpg", width: 1200, height: 630, alt: "Elvarra — Notre méthode" }],
   },
   alternates: { canonical: "https://elvarra.fr/notre-methode/" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  appleWebApp: { title: "ELVARRA" },
+  appleWebApp: { title: "Elvarra" },
 };
 
 export const viewport: Viewport = {

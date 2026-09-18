@@ -1,20 +1,20 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique relative aux cookies | ELVARRA",
+  title: "Politique relative aux cookies | Elvarra",
   description:
-    "Découvrez la politique relative aux cookies du site ELVARRA.",
+    "Découvrez la politique relative aux cookies du site Elvarra.",
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "Politique relative aux cookies | ELVARRA",
+    title: "Politique relative aux cookies | Elvarra",
     description:
-      "Découvrez la politique relative aux cookies du site ELVARRA.",
+      "Découvrez la politique relative aux cookies du site Elvarra.",
     images: [
       {
         url: "/og/cabinet.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Politique relative aux cookies",
+        alt: "Elvarra — Politique relative aux cookies",
       },
     ],
     siteName: "Elvarra",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Politique relative aux cookies | ELVARRA",
+    title: "Politique relative aux cookies | Elvarra",
     description:
-      "Découvrez la politique relative aux cookies du site ELVARRA.",
+      "Découvrez la politique relative aux cookies du site Elvarra.",
     images: ["/og/cabinet.jpg"],
   },
   alternates: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

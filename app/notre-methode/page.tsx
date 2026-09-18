@@ -30,7 +30,7 @@ export default function NotreMethodePage() {
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">
-                  Échanger avec ELVARRA
+                  Échanger avec Elvarra
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Button>
@@ -97,7 +97,7 @@ export default function NotreMethodePage() {
             </h2>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#1F6F63] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#1F6F63]">
-                Échanger avec ELVARRA
+                Échanger avec Elvarra
                 <ArrowRight className="h-4 w-4" />
               </span>
             </Button>

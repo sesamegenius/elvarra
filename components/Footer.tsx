@@ -20,7 +20,7 @@ export default function Footer() {
               <li><a href="/" className="hover:text-[#14213D]">Accueil</a></li>
               <li><a href="/particuliers/" className="hover:text-[#14213D]">Particuliers</a></li>
               <li><a href="/professionnels/" className="hover:text-[#14213D]">Professionnels</a></li>
-              <li><a href="/gestion-immobiliere/" className="hover:text-[#14213D]">ELVARRA Gestion</a></li>
+              <li><a href="/gestion-immobiliere/" className="hover:text-[#14213D]">Elvarra Gestion</a></li>
               <li><a href="/sinistres/" className="hover:text-[#14213D]">Vos sinistres</a></li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-[#E1E4E5] pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[13px] text-[#8A94A3]">© {new Date().getFullYear()} ELVARRA. Tous droits réservés.</p>
+          <p className="text-[13px] text-[#8A94A3]">© {new Date().getFullYear()} Elvarra. Tous droits réservés.</p>
           <div className="flex justify-center lg:justify-start lg:flex-wrap gap-x-6 gap-y-2 text-[13px] text-[#8A94A3]">
             <a href="/mentions" className="hover:text-[#14213D]">Mentions légales</a>
             <a href="/privacy" className="hover:text-[#14213D]">Politique de confidentialité</a>

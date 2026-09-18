@@ -24,9 +24,9 @@ export const viewport: Viewport = {
 
 
 export const metadata: Metadata = {
-  title: "Expert d'assuré après un sinistre | ELVARRA",
+  title: "Expert d'assuré après un sinistre | Elvarra",
   description:
-    "ELVARRA accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
+    "Elvarra accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
   icons: {
     icon: "/ElvarraLogo.png",
   },
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Expert d'assuré après un sinistre | ELVARRA",
+    title: "Expert d'assuré après un sinistre | Elvarra",
     description:
-      "ELVARRA accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
+      "Elvarra accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
     images: [
       {
         url: "/ElvarraLogo.png",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Expert d'assuré après un sinistre | ELVARRA",
+    title: "Expert d'assuré après un sinistre | Elvarra",
     description:
-      "ELVARRA accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
+      "Elvarra accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
     images: ["/ElvarraLogo.png"],
   },
 };

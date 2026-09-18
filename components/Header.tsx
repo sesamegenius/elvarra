@@ -9,7 +9,7 @@ import Link from 'next/link';
 const NAV_LINKS = [
   { label: 'Particuliers', href: '/particuliers/' },
   { label: 'Professionnels', href: '/professionnels/' },
-  { label: 'ELVARRA Gestion', href: '/gestion-immobiliere/' },
+  { label: 'Gestion Locative', href: '/gestion-immobiliere/' },
   { label: 'Vos sinistres', href: '/sinistres/' },
   { label: 'Contact', href: '/contact/' },
 ];
@@ -44,58 +44,69 @@ export default function Header() {
         "
       >
         {/* BARRE PRINCIPALE */}
-        <div className="flex h-16 items-center justify-between px-4 sm:h-20 sm:px-6">
+        <div className="flex h-20 items-center justify-between px-4 sm:h-24 sm:px-6">
 
           {/* LOGO — agrandi */}
           <Link
             href="/"
             onClick={closeMenu}
-            className="relative block h-12 w-[170px] shrink-0 sm:h-16 sm:w-[220px]"
+            className="
+              relative block shrink-0
+              h-14 w-[200px]
+               sm:w-[240px]
+              lg:w-[200px]
+              xl: h-48 xl:w-[240px]
+              2xl:h-48 2xl:w-[280px]
+            "
           >
             <Image
               src="/ElvarraLogo.png"
               alt="Logo Elvarra"
               fill
               priority
-              sizes="220px"
-              className="object-contain object-left"
+              sizes="280px"
+              className="object-center"
             />
           </Link>
 
-          {/* NAVIGATION DESKTOP */}
-          <nav className="hidden 2xl:flex items-center gap-8">
+          {/* NAVIGATION DESKTOP (dès lg) */}
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[15px] text-[#3A4657] transition-colors hover:text-[#14213D]"
+                className="text-[14px] xl:text-[15px] text-[#3A4657] transition-colors hover:text-[#14213D]"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* ACTIONS DESKTOP */}
-          <div className="hidden 2xl:flex items-center gap-3">
+          {/* ACTIONS DESKTOP (dès lg) */}
+          <div className="hidden lg:flex items-center gap-3">
             <Link
               href="tel:+33185099748"
+              aria-label="Appeler Elvarra au 01 85 09 97 48"
               className="flex items-center gap-2 text-[15px] text-[#3A4657] hover:text-[#14213D]"
             >
-              <IconPhone className="h-4 w-4" />
-              01 85 09 97 48
+              <IconPhone className="h-5 w-5" />
+              <span className="hidden 2xl:inline">01 85 09 97 48</span>
             </Link>
 
-            <Button href="/contact/" variant="primary">
-              Parler à un expert
-            </Button>
+            {/* Bouton visible dès xl seulement, faute de place à 1024px */}
+            <div className="hidden xl:block">
+              <Button href="/contact/" variant="primary">
+                Parler à un expert
+              </Button>
+            </div>
           </div>
 
-          {/* MOBILE / TABLETTE */}
-          <div className="flex shrink-0 items-center gap-2 2xl:hidden">
+          {/* MOBILE / TABLETTE (masqué dès lg) */}
+          <div className="flex shrink-0 items-center gap-2 lg:hidden">
             {/* TELEPHONE */}
             <Link
               href="tel:+33185099748"
-              aria-label="Appeler ELVARRA"
+              aria-label="Appeler Elvarra"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#14213D] text-white"
             >
               <IconPhone className="h-5 w-5" />
@@ -133,7 +144,7 @@ export default function Header() {
               bg-white
               p-4
               shadow-xl
-              2xl:hidden
+              lg:hidden
             "
           >
             {NAV_LINKS.map((link) => (
@@ -160,7 +171,7 @@ export default function Header() {
       {open && (
         <div
           onClick={closeMenu}
-          className="fixed inset-0 z-[9998] 2xl:hidden"
+          className="fixed inset-0 z-[9998] lg:hidden"
           aria-hidden="true"
         />
       )}

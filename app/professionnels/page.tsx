@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Expert d'assuré pour entreprises | ELVARRA",
+  title: "Expert d'assuré pour entreprises | Elvarra",
   description:
-    "ELVARRA accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
+    "Elvarra accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
 };
 
 const ENJEUX = [
@@ -62,7 +62,7 @@ export default function ProfessionnelsPage() {
                 Un sinistre professionnel ne touche pas seulement des murs
               </h1>
               <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-[#4A5568]">
-                Lorsqu&apos;un incendie, un dégât des eaux ou un événement climatique affecte vos locaux, ses conséquences peuvent concerner les équipements, les marchandises, l&apos;exploitation et la reprise d&apos;activité. ELVARRA structure et défend votre dossier dans le cadre de la mission confiée.
+                Lorsqu&apos;un incendie, un dégât des eaux ou un événement climatique affecte vos locaux, ses conséquences peuvent concerner les équipements, les marchandises, l&apos;exploitation et la reprise d&apos;activité. Elvarra structure et défend votre dossier dans le cadre de la mission confiée.
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">
@@ -79,9 +79,7 @@ export default function ProfessionnelsPage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#3D6BAD]/10 text-[#3D6BAD]">
-                <IconBuilding className="h-16 w-16" />
-              </div>
+                <img src="/AccompagnementProfessionnel.jpg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -132,7 +130,7 @@ export default function ProfessionnelsPage() {
               Une organisation adaptée aux décideurs
             </h2>
             <p className="mt-5 max-w-[640px] text-[15px] leading-relaxed text-white/80">
-              ELVARRA peut travailler avec la direction, la finance, l&apos;exploitation, les équipes immobilières, le courtier, l&apos;assureur, les experts et les entreprises intervenantes. L&apos;objectif est de disposer d&apos;un dossier centralisé, d&apos;échéances identifiées et d&apos;une information exploitable pour décider.
+              Elvarra peut travailler avec la direction, la finance, l&apos;exploitation, les équipes immobilières, le courtier, l&apos;assureur, les experts et les entreprises intervenantes. L&apos;objectif est de disposer d&apos;un dossier centralisé, d&apos;échéances identifiées et d&apos;une information exploitable pour décider.
             </p>
             <div className="mt-6 flex flex-wrap gap-2 justify-center md:justify-start">
               {STAKEHOLDERS.map((s) => (
@@ -168,7 +166,7 @@ export default function ProfessionnelsPage() {
               Vos locaux ou votre activité sont touchés ?
             </h2>
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/85">
-              Contactez ELVARRA dès que possible afin d&apos;organiser les premières étapes.
+              Contactez Elvarra dès que possible afin d&apos;organiser les premières étapes.
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#3D6BAD]">

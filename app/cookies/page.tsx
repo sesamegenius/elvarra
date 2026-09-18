@@ -17,7 +17,7 @@ export default function PolitiqueCookiesPage() {
             </h1>
 
             <p className="mt-5 text-[16px] leading-relaxed text-[#4A5568]">
-              Le site ELVARRA est un site vitrine. Il n’utilise pas de cookies ou
+              Le site Elvarra est un site vitrine. Il n’utilise pas de cookies ou
               de traceurs à des fins publicitaires, de profilage ou de mesure
               d’audience.
             </p>
@@ -59,7 +59,7 @@ export default function PolitiqueCookiesPage() {
 
               <p className="mt-3">
                 Le formulaire de contact permet de transmettre les informations
-                que vous choisissez de renseigner afin qu’ELVARRA puisse
+                que vous choisissez de renseigner afin qu’Elvarra puisse
                 répondre à votre demande. Les données transmises par le
                 formulaire ne sont pas utilisées pour déposer des cookies ou
                 des traceurs publicitaires.

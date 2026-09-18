@@ -44,7 +44,7 @@ const ETAPES_SERVICE = [
   {
     icon: ShieldCheck,
     title: "Accompagnement assurantiel",
-    text: "Analyse et défense des intérêts de la partie accompagnée lorsque cette mission relève du champ d'intervention d'ELVARRA et a été expressément confiée.",
+    text: "Analyse et défense des intérêts de la partie accompagnée lorsque cette mission relève du champ d'intervention d'Elvarra et a été expressément confiée.",
   },
   {
     icon: Hammer,
@@ -92,11 +92,11 @@ const AUDIENCES = [
 ];
 
 const PROTOCOLE = [
-  "Les situations transmises à ELVARRA",
+  "Les situations transmises à Elvarra",
   "Les critères d'urgence et d'escalade",
   "Les personnes autorisées à ouvrir ou valider un dossier",
   "Les documents à collecter",
-  "Le rôle respectif du gestionnaire, du bailleur, du locataire et d'ELVARRA",
+  "Le rôle respectif du gestionnaire, du bailleur, du locataire et d'Elvarra",
   "Les modalités de compte rendu",
   "Les limites de la mission et les règles relatives aux données",
 ];
@@ -112,11 +112,11 @@ const DEMARRAGE = [
 const FAQS = [
   {
     q: "Le service remplace-t-il le gestionnaire ?",
-    a: "Non. ELVARRA intervient comme partenaire spécialisé dans le périmètre convenu. Le gestionnaire conserve ses responsabilités, ses relations contractuelles et ses pouvoirs de décision.",
+    a: "Non. Elvarra intervient comme partenaire spécialisé dans le périmètre convenu. Le gestionnaire conserve ses responsabilités, ses relations contractuelles et ses pouvoirs de décision.",
   },
   {
     q: "Pouvez-vous empêcher qu'une indemnité soit versée au locataire ?",
-    a: "ELVARRA ne peut pas modifier unilatéralement les règles du contrat ou la qualité du bénéficiaire. Le service vise à organiser l'information et le suivi, et à protéger les intérêts de la partie accompagnée dans le cadre légal et contractuel applicable.",
+    a: "Elvarra ne peut pas modifier unilatéralement les règles du contrat ou la qualité du bénéficiaire. Le service vise à organiser l'information et le suivi, et à protéger les intérêts de la partie accompagnée dans le cadre légal et contractuel applicable.",
   },
   {
     q: "Intervenez-vous sur tous les sinistres du portefeuille ?",
@@ -124,7 +124,7 @@ const FAQS = [
   },
   {
     q: "Pouvez-vous suivre les travaux ?",
-    a: "ELVARRA peut suivre la remise en état sur un plan documentaire et organisationnel selon la mission. Une mission de maîtrise d'œuvre ou de contrôle technique, si elle est nécessaire et possible, doit être distinctement définie et confiée à un intervenant compétent et assuré.",
+    a: "Elvarra peut suivre la remise en état sur un plan documentaire et organisationnel selon la mission. Une mission de maîtrise d'œuvre ou de contrôle technique, si elle est nécessaire et possible, doit être distinctement définie et confiée à un intervenant compétent et assuré.",
   },
   {
     q: "Comment nos équipes transmettent-elles un dossier ?",
@@ -136,7 +136,7 @@ const FAQS = [
   },
   {
     q: "Comment sont définies les modalités de collaboration ?",
-    a: "Après l'étude du portefeuille et du périmètre attendu, ELVARRA propose un cadre d'intervention et une convention adaptés. Aucune modalité tarifaire n'est publiée sur le site.",
+    a: "Après l'étude du portefeuille et du périmètre attendu, Elvarra propose un cadre d'intervention et une convention adaptés. Aucune modalité tarifaire n'est publiée sur le site.",
   },
 ];
 
@@ -148,12 +148,12 @@ export default function GestionImmobiliereePage() {
         {/* HERO */}
         <section className="px-6 pb-14 pt-16 md:px-14 md:pt-20">
           <div className="max-w-[720px] mx-auto md:mx-0">
-            <SectionLabel tone="amber">ELVARRA Gestion</SectionLabel>
+            <SectionLabel tone="amber">Elvarra Gestion</SectionLabel>
             <h1 className="text-[34px] leading-[1.15] text-[#14213D] sm:text-[42px] lg:text-[46px]" style={{ fontFamily: "var(--font-display)" }}>
               Vos biens sont sous gestion. Leurs sinistres doivent l&apos;être aussi.
             </h1>
             <p className="mt-6 text-[16px] leading-relaxed text-[#4A5568]">
-              ELVARRA Gestion accompagne les administrateurs de biens, cabinets de gestion locative, bailleurs et responsables de patrimoine dans le suivi structuré des sinistres affectant leurs biens.
+              Elvarra Gestion accompagne les administrateurs de biens, cabinets de gestion locative, bailleurs et responsables de patrimoine dans le suivi structuré des sinistres affectant leurs biens.
             </p>
             <p className="mt-4 text-[16px] leading-relaxed text-[#4A5568]">
               Du signalement à la clôture documentée, vous disposez d&apos;un interlocuteur identifié, d&apos;une méthode commune et d&apos;une vision claire de l&apos;avancement de chaque dossier.
@@ -185,7 +185,7 @@ export default function GestionImmobiliereePage() {
               Dans un portefeuille immobilier, le risque ne s&apos;arrête pas à la déclaration du sinistre. L&apos;information peut être dispersée, les responsabilités mal comprises, les justificatifs incomplets et la remise en état insuffisamment suivie. Le gestionnaire peut alors découvrir tardivement qu&apos;un dossier considéré comme terminé n&apos;a pas abouti à une situation correctement documentée.
             </p>
             <p className="mt-4 max-w-[680px] text-[16px] leading-relaxed text-[#14213D]" style={{ fontFamily: "var(--font-display)" }}>
-              ELVARRA Gestion vise à refermer cette boucle.
+              Elvarra Gestion vise à refermer cette boucle.
             </p>
           </div>
         </section>
@@ -240,7 +240,7 @@ export default function GestionImmobiliereePage() {
     {/* Cercle intérieur */}
     <div className="absolute left-1/2 top-1/2 flex h-[190px] w-[190px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-[#14213D] text-center shadow-[0_15px_45px_rgba(20,33,61,0.12)]">
       <span className="text-[11px] uppercase tracking-[0.18em] text-[#BFE0D6]">
-        ELVARRA
+        Elvarra
       </span>
 
       <span
@@ -391,7 +391,7 @@ export default function GestionImmobiliereePage() {
           </div>
 
           <p className="mt-6 max-w-[680px] text-[14px] leading-relaxed text-[#4A5568]">
-            ELVARRA Gestion n&apos;est pas présenté comme un dispositif de surveillance du locataire. Il s&apos;agit d&apos;un processus de gestion transparent qui protège le bien et facilite le traitement du sinistre pour toutes les parties de bonne foi.
+            Elvarra Gestion n&apos;est pas présenté comme un dispositif de surveillance du locataire. Il s&apos;agit d&apos;un processus de gestion transparent qui protège le bien et facilite le traitement du sinistre pour toutes les parties de bonne foi.
           </p>
         </section>
 
@@ -405,7 +405,7 @@ export default function GestionImmobiliereePage() {
                   Un service adapté à votre organisation
                 </h2>
                 <p className="mt-5 max-w-[480px] text-[15px] leading-relaxed text-[#4A5568]">
-                  Chaque portefeuille a ses propres mandats, outils, équipes et règles de validation. ELVARRA commence par étudier votre fonctionnement : volume de lots, typologie des actifs, circuit actuel de déclaration, rôles internes, prestataires, outils et reporting attendu.
+                  Chaque portefeuille a ses propres mandats, outils, équipes et règles de validation. Elvarra commence par étudier votre fonctionnement : volume de lots, typologie des actifs, circuit actuel de déclaration, rôles internes, prestataires, outils et reporting attendu.
                 </p>
                 <p className="mt-4 max-w-[480px] text-[14px] leading-relaxed text-[#14213D]" style={{ fontFamily: "var(--font-display)" }}>
                   Un protocole d&apos;intervention peut ensuite préciser :
@@ -432,10 +432,10 @@ export default function GestionImmobiliereePage() {
         <section className="px-6 pb-16 md:px-14">
           <div className="rounded-3xl bg-[#FEF1D0] p-8 md:p-12">
             <h2 className="max-w-[600px] text-[24px] leading-tight text-[#14213D] lg:text-[28px]" style={{ fontFamily: "var(--font-display)" }}>
-              Ce qu&apos;ELVARRA Gestion ne promet pas
+              Ce qu&apos;Elvarra Gestion ne promet pas
             </h2>
             <p className="mt-5 max-w-[680px] text-[16px] leading-relaxed text-[#4A5568]">
-              ELVARRA ne peut pas décider unilatéralement du bénéficiaire d&apos;une indemnité, modifier les obligations d&apos;un contrat d&apos;assurance ou garantir la réalisation de travaux par un tiers. L&apos;intervention repose sur les mandats, contrats, droits et responsabilités applicables à chaque situation.
+              Elvarra ne peut pas décider unilatéralement du bénéficiaire d&apos;une indemnité, modifier les obligations d&apos;un contrat d&apos;assurance ou garantir la réalisation de travaux par un tiers. L&apos;intervention repose sur les mandats, contrats, droits et responsabilités applicables à chaque situation.
             </p>
             <p className="mt-4 max-w-[680px] text-[15px] leading-relaxed text-[#8A6A26]" style={{ fontFamily: "var(--font-display)" }}>
               La valeur du service tient à la maîtrise de l&apos;information, à la méthode et à la continuité du suivi.
@@ -473,7 +473,7 @@ export default function GestionImmobiliereePage() {
             <div>
               <SectionLabel tone="amber">Questions fréquentes</SectionLabel>
               <h2 className="text-[26px] leading-tight text-[#14213D] lg:text-[30px]" style={{ fontFamily: "var(--font-display)" }}>
-                FAQ ELVARRA Gestion
+                FAQ Elvarra Gestion
               </h2>
             </div>
             <div>
@@ -495,7 +495,7 @@ export default function GestionImmobiliereePage() {
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-[#D9A44E] text-[#14213D]">
               <span className="flex items-center gap-2 text-[#14213D]">
-                Demander un échange ELVARRA Gestion
+                Demander un échange Elvarra Gestion
                 <ArrowRight className="h-4 w-4" />
               </span>
             </Button>

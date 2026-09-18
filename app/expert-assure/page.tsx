@@ -7,7 +7,7 @@ const ROLES = [
   { title: "L'expert mandaté par l'assureur", text: 'Réalise la mission confiée par la compagnie.' },
   { title: 'L\u2019entreprise de travaux', text: 'Propose et réalise des prestations de remise en état.' },
   {
-    title: "ELVARRA, l'expert d'assuré",
+    title: "Elvarra, l'expert d'assuré",
     text: "Intervient à vos côtés dans le cadre de sa propre mission, pour analyser, documenter, évaluer et défendre votre dossier.",
     highlight: true,
   },
@@ -15,7 +15,7 @@ const ROLES = [
 
 const MISSION_STEPS = [
   { title: 'La lettre de mission', text: "Elle précise l'objet, le périmètre, les obligations de chacun, les modalités d'honoraires et les conditions de fin de mission." },
-  { title: "L'analyse des pièces", text: 'ELVARRA examine les documents transmis et identifie les points à approfondir.' },
+  { title: "L'analyse des pièces", text: 'Elvarra examine les documents transmis et identifie les points à approfondir.' },
   { title: 'La documentation', text: 'Les dommages sont constatés et les évaluations prévues à la mission sont établies.' },
   { title: 'Les échanges', text: "Nous préparons les échanges et suivons le dossier selon les limites convenues." },
 ];

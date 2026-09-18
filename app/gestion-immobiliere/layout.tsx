@@ -1,22 +1,22 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Gestion des sinistres immobiliers | ELVARRA Gestion",
+  title: "Gestion des sinistres immobiliers | Elvarra Gestion",
   description:
-    "ELVARRA Gestion accompagne les gestionnaires immobiliers pour structurer, suivre et documenter les sinistres des biens sous gestion.",
+    "Elvarra Gestion accompagne les gestionnaires immobiliers pour structurer, suivre et documenter les sinistres des biens sous gestion.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Gestion des sinistres immobiliers | ELVARRA Gestion",
+    title: "Gestion des sinistres immobiliers | Elvarra Gestion",
     description:
-      "ELVARRA Gestion accompagne les gestionnaires immobiliers pour structurer, suivre et documenter les sinistres des biens sous gestion.",
+      "Elvarra Gestion accompagne les gestionnaires immobiliers pour structurer, suivre et documenter les sinistres des biens sous gestion.",
     images: [
       {
         url: "/og/gestion-immobiliere.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA Gestion — Gestion des sinistres immobiliers",
+        alt: "Elvarra Gestion — Gestion des sinistres immobiliers",
       },
     ],
     siteName: "Elvarra",
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Gestion des sinistres immobiliers | ELVARRA Gestion",
+    title: "Gestion des sinistres immobiliers | Elvarra Gestion",
     description:
-      "ELVARRA Gestion accompagne les gestionnaires immobiliers pour structurer, suivre et documenter les sinistres des biens sous gestion.",
+      "Elvarra Gestion accompagne les gestionnaires immobiliers pour structurer, suivre et documenter les sinistres des biens sous gestion.",
     images: [
       {
         url: "/og/gestion-immobiliere.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA Gestion — Gestion des sinistres immobiliers",
+        alt: "Elvarra Gestion — Gestion des sinistres immobiliers",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

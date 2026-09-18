@@ -30,7 +30,7 @@ export default function MentionsLegalesPage() {
           <div className="rounded-3xl bg-white p-8 md:p-12">
             <div className="mx-auto max-w-[720px] text-[15px] leading-relaxed text-[#3A4657]">
               <p>
-                Le site elvarra.fr est édité par ELVARRA, société par actions simplifiée au
+                Le site elvarra.fr est édité par Elvarra, société par actions simplifiée au
                 capital de 1 000 euros, dont le siège social est situé 47 rue Marcel Dassault,
                 92100 Boulogne-Billancourt, immatriculée au Registre du commerce et des sociétés
                 de Nanterre sous le numéro 7112B - Ingénierie, études techniques
@@ -52,10 +52,6 @@ export default function MentionsLegalesPage() {
                 <div>
                   <dt className="text-[13px] text-[#7A8598]">Email</dt>
                   <dd className="mt-1">hello@elvarra.fr</dd>
-                </div>
-                <div>
-                  <dt className="text-[13px] text-[#7A8598]">Directeur de la publication</dt>
-                  <dd className="mt-1">Michaël D&apos;AVILA</dd>
                 </div>
               </dl>
 
@@ -93,7 +89,7 @@ export default function MentionsLegalesPage() {
               <p className="mt-3">
                 Les informations publiées ont un caractère général et pédagogique. Elles ne
                 constituent pas une analyse personnalisée d’un contrat, un avis juridique ni une
-                garantie d’indemnisation. ELVARRA s’efforce d’assurer leur exactitude et leur mise
+                garantie d’indemnisation. Elvarra s’efforce d’assurer leur exactitude et leur mise
                 à jour, sans pouvoir garantir qu’elles répondent à chaque situation particulière.
               </p>
             </div>

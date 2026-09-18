@@ -6,7 +6,7 @@ type FAQCategory = { title: string; tone: 'teal' | 'sky' | 'amber'; items: FAQIt
 
 const CATEGORIES: FAQCategory[] = [
   {
-    title: 'Comprendre le rôle d’ELVARRA',
+    title: 'Comprendre le rôle d’Elvarra',
     tone: 'teal',
     items: [
       {
@@ -18,11 +18,11 @@ const CATEGORIES: FAQCategory[] = [
         a: 'L’expert mandaté par l’assureur accomplit la mission confiée par la compagnie. L’expert d’assuré est choisi par l’assuré et intervient dans le cadre d’une lettre de mission distincte. Les deux experts peuvent échanger sur le même dossier, mais ils n’ont pas le même donneur d’ordre.',
       },
       {
-        q: 'ELVARRA remplace-t-il mon assureur, mon courtier ou mon avocat ?',
-        a: 'Non. Chaque intervenant a son rôle. ELVARRA agit comme expert d’assuré dans le périmètre de sa mission. Une question juridique ou contentieuse peut nécessiter l’intervention d’un avocat ; la gestion du contrat reste du ressort de l’assureur et, le cas échéant, du courtier ou de l’agent.',
+        q: 'Elvarra remplace-t-il mon assureur, mon courtier ou mon avocat ?',
+        a: 'Non. Chaque intervenant a son rôle. Elvarra agit comme expert d’assuré dans le périmètre de sa mission. Une question juridique ou contentieuse peut nécessiter l’intervention d’un avocat ; la gestion du contrat reste du ressort de l’assureur et, le cas échéant, du courtier ou de l’agent.',
       },
       {
-        q: 'ELVARRA réalise-t-il les travaux ?',
+        q: 'Elvarra réalise-t-il les travaux ?',
         a: 'Non, sauf activité distincte expressément annoncée, contractualisée et assurée. Le rôle présenté sur ce site concerne l’expertise et l’accompagnement du dossier. Les travaux sont réalisés par des entreprises choisies selon les modalités applicables.',
       },
     ],
@@ -36,8 +36,8 @@ const CATEGORIES: FAQCategory[] = [
         a: 'Le plus tôt possible lorsque les dommages sont importants, le dossier complexe ou une expertise imminente. Une intervention précoce facilite la conservation des preuves et la préparation. Un dossier déjà engagé peut aussi être examiné.',
       },
       {
-        q: 'Puis-je contacter ELVARRA après le passage de l’expert ?',
-        a: 'Oui. ELVARRA étudiera les pièces disponibles, les constats déjà réalisés, les positions exprimées et les délais à respecter afin de déterminer si une intervention reste pertinente.',
+        q: 'Puis-je contacter Elvarra après le passage de l’expert ?',
+        a: 'Oui. Elvarra étudiera les pièces disponibles, les constats déjà réalisés, les positions exprimées et les délais à respecter afin de déterminer si une intervention reste pertinente.',
       },
       {
         q: 'Puis-je vous contacter après avoir reçu une proposition ?',
@@ -67,7 +67,7 @@ const CATEGORIES: FAQCategory[] = [
       },
       {
         q: 'Quels documents dois-je préparer ?',
-        a: 'Contrat et conditions applicables, déclaration, courriers, rapports, photographies, factures, preuves d’achat, inventaires, états des lieux, devis, justificatifs de frais et chronologie des échanges. ELVARRA vous indiquera les pièces pertinentes pour votre situation.',
+        a: 'Contrat et conditions applicables, déclaration, courriers, rapports, photographies, factures, preuves d’achat, inventaires, états des lieux, devis, justificatifs de frais et chronologie des échanges. Elvarra vous indiquera les pièces pertinentes pour votre situation.',
       },
       {
         q: 'Un devis d’entreprise suffit-il ?',
@@ -81,11 +81,11 @@ const CATEGORIES: FAQCategory[] = [
     items: [
       {
         q: 'Pouvez-vous garantir une meilleure indemnisation ?',
-        a: 'Non. ELVARRA garantit une méthode et l’exécution de la mission convenue, pas un résultat financier. L’indemnisation dépend notamment du contrat, des dommages établis, des responsabilités, des justificatifs et des échanges entre les parties.',
+        a: 'Non. Elvarra garantit une méthode et l’exécution de la mission convenue, pas un résultat financier. L’indemnisation dépend notamment du contrat, des dommages établis, des responsabilités, des justificatifs et des échanges entre les parties.',
       },
       {
         q: 'Que faire si je ne suis pas d’accord avec l’évaluation ?',
-        a: 'Demandez les éléments ayant conduit à l’évaluation, identifiez précisément les postes contestés et rassemblez vos justificatifs. ELVARRA peut analyser le dossier et vous indiquer les démarches techniques envisageables. Les voies applicables dépendent du contrat et de l’état du dossier.',
+        a: 'Demandez les éléments ayant conduit à l’évaluation, identifiez précisément les postes contestés et rassemblez vos justificatifs. Elvarra peut analyser le dossier et vous indiquer les démarches techniques envisageables. Les voies applicables dépendent du contrat et de l’état du dossier.',
       },
       {
         q: 'Accepter une proposition m’engage-t-il ?',
@@ -98,7 +98,7 @@ const CATEGORIES: FAQCategory[] = [
     tone: 'amber',
     items: [
       {
-        q: 'Comment sont calculés les honoraires d’ELVARRA ?',
+        q: 'Comment sont calculés les honoraires d’Elvarra ?',
         a: 'Ils sont définis en fonction de la nature, des enjeux et de la complexité de la mission, puis expliqués avant engagement. La lettre de mission précise les modalités applicables.',
       },
       {
@@ -116,20 +116,20 @@ const CATEGORIES: FAQCategory[] = [
     tone: 'teal',
     items: [
       {
-        q: 'ELVARRA intervient-il auprès des entreprises ?',
+        q: 'Elvarra intervient-il auprès des entreprises ?',
         a: 'Oui, pour des sinistres touchant les locaux, équipements, stocks ou l’activité, selon le champ de compétence, le contrat et la mission convenue.',
       },
       {
-        q: 'Qu’est-ce qu’ELVARRA Gestion ?',
-        a: 'ELVARRA Gestion est un service destiné aux acteurs de la gestion immobilière. Il vise à structurer le suivi des sinistres des biens sous gestion, du signalement à la clôture documentée, selon un protocole défini avec le partenaire.',
+        q: 'Qu’est-ce qu’Elvarra Gestion ?',
+        a: 'Elvarra Gestion est un service destiné aux acteurs de la gestion immobilière. Il vise à structurer le suivi des sinistres des biens sous gestion, du signalement à la clôture documentée, selon un protocole défini avec le partenaire.',
       },
       {
-        q: 'ELVARRA Gestion empêche-t-il le locataire de percevoir une indemnité ?',
+        q: 'Elvarra Gestion empêche-t-il le locataire de percevoir une indemnité ?',
         a: 'Non. Le service ne modifie pas les droits résultant des contrats ou des règles applicables. Il améliore la circulation de l’information, la documentation et le suivi de la remise en état dans le périmètre convenu.',
       },
       {
         q: 'Proposez-vous une formule standard pour les cabinets de gestion ?',
-        a: 'Le service est présenté sans tarif ni modèle économique public. ELVARRA étudie l’organisation, le portefeuille et les besoins du cabinet avant de proposer un cadre de collaboration adapté.',
+        a: 'Le service est présenté sans tarif ni modèle économique public. Elvarra étudie l’organisation, le portefeuille et les besoins du cabinet avant de proposer un cadre de collaboration adapté.',
       },
     ],
   },
@@ -138,7 +138,7 @@ const CATEGORIES: FAQCategory[] = [
     tone: 'sky',
     items: [
       {
-        q: 'Où ELVARRA intervient-il ?',
+        q: 'Où Elvarra intervient-il ?',
         a: 'Certaines analyses peuvent commencer à distance, mais une visite sur site peut être nécessaire selon le dossier.',
       },
       {
@@ -203,12 +203,12 @@ export default function FaqPage() {
               Une question ne trouve pas de réponse ici ?
             </h2>
             <p className="mx-auto mt-5 max-w-[480px] text-[16px] leading-relaxed text-white">
-              Expliquez-nous votre situation. Nous vous indiquerons si et comment ELVARRA peut
+              Expliquez-nous votre situation. Nous vous indiquerons si et comment Elvarra peut
               intervenir.
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#14213D]">
               <span className="flex items-center gap-2 text-[#14213D]">
-                Parler à un expert ELVARRA
+                Parler à un expert Elvarra
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Button>

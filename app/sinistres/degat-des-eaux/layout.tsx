@@ -1,22 +1,22 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Expert d'assuré dégât des eaux | ELVARRA",
+  title: "Expert d'assuré dégât des eaux | Elvarra",
   description:
-    "ELVARRA vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
+    "Elvarra vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Expert d'assuré dégât des eaux | ELVARRA",
+    title: "Expert d'assuré dégât des eaux | Elvarra",
     description:
-      "ELVARRA vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
+      "Elvarra vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
     images: [
       {
         url: "/og/degat-des-eaux.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Expert d'assuré dégât des eaux",
+        alt: "Elvarra — Expert d'assuré dégât des eaux",
       },
     ],
     siteName: "Elvarra",
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Expert d'assuré dégât des eaux | ELVARRA",
+    title: "Expert d'assuré dégât des eaux | Elvarra",
     description:
-      "ELVARRA vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
+      "Elvarra vous aide à documenter les dommages et préparer votre dossier après un dégât des eaux.",
     images: [
       {
         url: "/og/degat-des-eaux.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Expert d'assuré dégât des eaux",
+        alt: "Elvarra — Expert d'assuré dégât des eaux",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

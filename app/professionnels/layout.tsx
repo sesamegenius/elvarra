@@ -1,22 +1,22 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Expert d'assuré pour entreprises | ELVARRA",
+  title: "Expert d'assuré pour entreprises | Elvarra",
   description:
-    "ELVARRA accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
+    "Elvarra accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Expert d'assuré pour entreprises | ELVARRA",
+    title: "Expert d'assuré pour entreprises | Elvarra",
     description:
-      "ELVARRA accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
+      "Elvarra accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
     images: [
       {
         url: "/og/professionnels.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Expert d'assuré pour entreprises",
+        alt: "Elvarra — Expert d'assuré pour entreprises",
       },
     ],
     siteName: "Elvarra",
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Expert d'assuré pour entreprises | ELVARRA",
+    title: "Expert d'assuré pour entreprises | Elvarra",
     description:
-      "ELVARRA accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
+      "Elvarra accompagne les entreprises après un sinistre touchant leurs locaux, équipements, stocks ou activité.",
     images: [
       {
         url: "/og/professionnels.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Expert d'assuré pour entreprises",
+        alt: "Elvarra — Expert d'assuré pour entreprises",
       },
     ],
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

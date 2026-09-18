@@ -50,7 +50,7 @@ export default function SinistresHubPage() {
               Chaque sinistre a ses urgences. Chaque dossier exige une méthode.
             </h1>
             <p className="mt-6 text-[16px] leading-relaxed text-[#4A5568]">
-              Sélectionnez votre situation pour connaître les premiers réflexes, les points de vigilance et la manière dont ELVARRA peut vous accompagner.
+              Sélectionnez votre situation pour connaître les premiers réflexes, les points de vigilance et la manière dont Elvarra peut vous accompagner.
             </p>
           </div>
         </section>

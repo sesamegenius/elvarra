@@ -1,22 +1,22 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Accompagnement après sinistre | ELVARRA",
+  title: "Accompagnement après sinistre | Elvarra",
   description:
-    "Incendie, dégât des eaux, événement climatique : découvrez les premières étapes et l'accompagnement d'ELVARRA.",
+    "Incendie, dégât des eaux, événement climatique : découvrez les premières étapes et l'accompagnement d'Elvarra.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Accompagnement après sinistre | ELVARRA",
+    title: "Accompagnement après sinistre | Elvarra",
     description:
-      "Incendie, dégât des eaux, événement climatique : découvrez les premières étapes et l'accompagnement d'ELVARRA.",
+      "Incendie, dégât des eaux, événement climatique : découvrez les premières étapes et l'accompagnement d'Elvarra.",
     images: [
       {
         url: "/og/sinistres.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Accompagnement après sinistre",
+        alt: "Elvarra — Accompagnement après sinistre",
       },
     ],
     siteName: "Elvarra",
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Accompagnement après sinistre | ELVARRA",
+    title: "Accompagnement après sinistre | Elvarra",
     description:
-      "Incendie, dégât des eaux, événement climatique : découvrez les premières étapes et l'accompagnement d'ELVARRA.",
+      "Incendie, dégât des eaux, événement climatique : découvrez les premières étapes et l'accompagnement d'Elvarra.",
     images: [
       {
         url: "/og/sinistres.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Accompagnement après sinistre",
+        alt: "Elvarra — Accompagnement après sinistre",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

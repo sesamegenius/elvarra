@@ -1,13 +1,13 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Les conseils d'ELVARRA",
-  description: "Découvrez l'approche, les conseils de l'équipe ELVARRA.",
+  title: "Les conseils d'Elvarra",
+  description: "Découvrez l'approche, les conseils de l'équipe Elvarra.",
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "Les conseils d'ELVARRA",
-    description: "Découvrez l'approche, les conseils de l'équipe ELVARRA.",
-    images: [{ url: "/og/cabinet.jpg", width: 1200, height: 630, alt: "ELVARRA — Les conseils" }],
+    title: "Les conseils d'Elvarra",
+    description: "Découvrez l'approche, les conseils de l'équipe Elvarra.",
+    images: [{ url: "/og/cabinet.jpg", width: 1200, height: 630, alt: "Elvarra — Les conseils" }],
     siteName: "Elvarra",
     type: "website",
     url: "https://elvarra.fr/conseils/",
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Les conseils d'ELVARRA",
-    description: "Découvrez l'approche, les conseils de l'équipe ELVARRA.",
-    images: [{ url: "/og/cabinet.jpg", width: 1200, height: 630, alt: "ELVARRA — Les conseils" }],
+    title: "Les conseils d'Elvarra",
+    description: "Découvrez l'approche, les conseils de l'équipe Elvarra.",
+    images: [{ url: "/og/cabinet.jpg", width: 1200, height: 630, alt: "Elvarra — Les conseils" }],
   },
   alternates: { canonical: "https://elvarra.fr/conseils/" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  appleWebApp: { title: "ELVARRA" },
+  appleWebApp: { title: "Elvarra" },
 };
 
 export const viewport: Viewport = {

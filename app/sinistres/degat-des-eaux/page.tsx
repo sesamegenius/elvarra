@@ -27,7 +27,7 @@ export default function DegatDesEauxPage() {
                 Dégât des eaux : ne laissez pas les dommages visibles résumer toute la situation
               </h1>
               <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-[#4A5568]">
-                Une trace au plafond peut révéler des conséquences plus larges : revêtements, isolation, mobilier, équipements, humidité persistante ou impossibilité d&apos;utiliser une pièce. ELVARRA vous aide à documenter le sinistre et à structurer le dossier.
+                Une trace au plafond peut révéler des conséquences plus larges : revêtements, isolation, mobilier, équipements, humidité persistante ou impossibilité d&apos;utiliser une pièce. Elvarra vous aide à documenter le sinistre et à structurer le dossier.
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">
@@ -38,9 +38,7 @@ export default function DegatDesEauxPage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#3D6BAD]/10 text-[#3D6BAD]">
-                <Droplets className="h-16 w-16" />
-              </div>
+                <img src="/degatdeseaux.jpg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -77,7 +75,7 @@ export default function DegatDesEauxPage() {
               La recherche de fuite, la réparation de la cause et la remise en état des conséquences sont des sujets distincts. Les responsabilités, la propriété des éléments endommagés et les conventions entre assureurs peuvent également influer sur le traitement.
             </p>
             <p className="mt-4 max-w-[680px] text-[15px] leading-relaxed text-[#AEC9E8]">
-              ELVARRA clarifie les faits et les documents sans présumer de la prise en charge.
+              Elvarra clarifie les faits et les documents sans présumer de la prise en charge.
             </p>
           </div>
         </section>
@@ -93,7 +91,7 @@ export default function DegatDesEauxPage() {
             </p>
             <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD] hover:bg-gray-200">
               <span className="flex items-center gap-2 text-[#3D6BAD]">
-                Parler à ELVARRA
+                Parler à Elvarra
                 <ArrowRight className="h-4 w-4" />
               </span>
             </Button>

@@ -1,22 +1,22 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Expert d'assuré après incendie | ELVARRA",
+  title: "Expert d'assuré après incendie | Elvarra",
   description:
-    "Après un incendie, ELVARRA vous accompagne pour documenter, évaluer et défendre les dommages de votre logement ou entreprise.",
+    "Après un incendie, Elvarra vous accompagne pour documenter, évaluer et défendre les dommages de votre logement ou entreprise.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Expert d'assuré après incendie | ELVARRA",
+    title: "Expert d'assuré après incendie | Elvarra",
     description:
-      "Après un incendie, ELVARRA vous accompagne pour documenter, évaluer et défendre les dommages de votre logement ou entreprise.",
+      "Après un incendie, Elvarra vous accompagne pour documenter, évaluer et défendre les dommages de votre logement ou entreprise.",
     images: [
       {
         url: "/og/incendie.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Expert d'assuré après incendie",
+        alt: "Elvarra — Expert d'assuré après incendie",
       },
     ],
     siteName: "Elvarra",
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Expert d'assuré après incendie | ELVARRA",
+    title: "Expert d'assuré après incendie | Elvarra",
     description:
-      "Après un incendie, ELVARRA vous accompagne pour documenter, évaluer et défendre les dommages de votre logement ou entreprise.",
+      "Après un incendie, Elvarra vous accompagne pour documenter, évaluer et défendre les dommages de votre logement ou entreprise.",
     images: [
       {
         url: "/og/incendie.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Expert d'assuré après incendie",
+        alt: "Elvarra — Expert d'assuré après incendie",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

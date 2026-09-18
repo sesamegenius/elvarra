@@ -30,7 +30,7 @@ export default function CabinetPage() {
                 L&apos;expertise au service d&apos;une décision plus claire
               </h1>
               <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-[#4A5568]">
-                ELVARRA accompagne les assurés et les acteurs de l&apos;immobilier confrontés à un sinistre. Notre rôle est de rendre les enjeux lisibles, de structurer les preuves et de défendre le dossier avec méthode.
+                Elvarra accompagne les assurés et les acteurs de l&apos;immobilier confrontés à un sinistre. Notre rôle est de rendre les enjeux lisibles, de structurer les preuves et de défendre le dossier avec méthode.
               </p>
               <Button href="/contact/" variant="primary" className="mt-8">
                 <span className="flex items-center gap-2">

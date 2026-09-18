@@ -1,20 +1,20 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Mentions légales | ELVARRA",
+  title: "Mentions légales | Elvarra",
   description:
-    "Consultez les mentions légales du site ELVARRA.",
+    "Consultez les mentions légales du site Elvarra.",
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "Mentions légales | ELVARRA",
+    title: "Mentions légales | Elvarra",
     description:
-      "Consultez les mentions légales du site ELVARRA.",
+      "Consultez les mentions légales du site Elvarra.",
     images: [
       {
         url: "/og/cabinet.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Mentions légales",
+        alt: "Elvarra — Mentions légales",
       },
     ],
     siteName: "Elvarra",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Mentions légales | ELVARRA",
+    title: "Mentions légales | Elvarra",
     description:
-      "Consultez les mentions légales du site ELVARRA.",
+      "Consultez les mentions légales du site Elvarra.",
     images: ["/og/cabinet.jpg"],
   },
   alternates: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

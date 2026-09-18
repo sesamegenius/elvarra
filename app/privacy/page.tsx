@@ -30,7 +30,7 @@ export default function PolitiqueConfidentialitePage() {
               Politique de confidentialité
             </h1>
             <p className="mt-5 text-[16px] leading-relaxed text-[#4A5568]">
-              ELVARRA accorde une attention particulière à la protection des données
+              Elvarra accorde une attention particulière à la protection des données
               personnelles. Cette page explique quelles données sont traitées lorsque vous
               utilisez le site, pourquoi elles le sont, pendant combien de temps et quels sont vos
               droits.
@@ -54,7 +54,7 @@ export default function PolitiqueConfidentialitePage() {
                 Responsable du traitement
               </h2>
               <p className="mt-3">
-                ELVARRA, 47 rue Marcel Dassault, 92100 Boulogne-Billancourt —
+                Elvarra, 47 rue Marcel Dassault, 92100 Boulogne-Billancourt —
                 hello@elvarra.fr.
               </p>
 
@@ -84,7 +84,7 @@ export default function PolitiqueConfidentialitePage() {
                 Destinataires
               </h2>
               <p className="mt-3">
-                Les données sont accessibles aux personnes habilitées d’ELVARRA et à ses
+                Les données sont accessibles aux personnes habilitées d’Elvarra et à ses
                 prestataires agissant selon ses instructions : hébergement, maintenance,
                 messagerie, CRM, mesure d’audience ou sécurité. Elles peuvent être transmises à
                 d’autres destinataires lorsque la loi l’impose ou lorsque la mission et

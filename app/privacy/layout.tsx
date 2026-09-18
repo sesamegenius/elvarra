@@ -1,20 +1,20 @@
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité | ELVARRA",
+  title: "Politique de confidentialité | Elvarra",
   description:
-    "Découvrez la politique de confidentialité et la protection des données personnelles du site ELVARRA.",
+    "Découvrez la politique de confidentialité et la protection des données personnelles du site Elvarra.",
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "Politique de confidentialité | ELVARRA",
+    title: "Politique de confidentialité | Elvarra",
     description:
-      "Découvrez la politique de confidentialité et la protection des données personnelles du site ELVARRA.",
+      "Découvrez la politique de confidentialité et la protection des données personnelles du site Elvarra.",
     images: [
       {
         url: "/og/cabinet.jpg",
         width: 1200,
         height: 630,
-        alt: "ELVARRA — Politique de confidentialité",
+        alt: "Elvarra — Politique de confidentialité",
       },
     ],
     siteName: "Elvarra",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     countryName: "France",
   },
   twitter: {
-    title: "Politique de confidentialité | ELVARRA",
+    title: "Politique de confidentialité | Elvarra",
     description:
-      "Découvrez la politique de confidentialité et la protection des données personnelles du site ELVARRA.",
+      "Découvrez la politique de confidentialité et la protection des données personnelles du site Elvarra.",
     images: ["/og/cabinet.jpg"],
   },
   alternates: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   appleWebApp: {
-    title: "ELVARRA",
+    title: "Elvarra",
   },
 };
 

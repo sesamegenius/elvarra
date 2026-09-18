@@ -26,7 +26,7 @@ const OBJETS: Option[] = [
   { value: "expertise_programmee", label: "Expertise programmée" },
   { value: "proposition_recue", label: "Proposition reçue" },
   { value: "desaccord", label: "Désaccord" },
-  { value: "elvarra_gestion", label: "ELVARRA Gestion" },
+  { value: "elvarra_gestion", label: "Elvarra Gestion" },
   { value: "autre", label: "Autre" },
 ];
 
@@ -203,7 +203,7 @@ export default function ContactForm({
       {submitStatus === "success" && (
         <div className="mb-6 rounded-xl border border-[#BFE0D6] bg-[#D4E8D2] p-4">
           <p className="text-[15px] text-[#14213D]">
-            Votre demande a bien été transmise. Un membre de l&apos;équipe ELVARRA vous
+            Votre demande a bien été transmise. Un membre de l&apos;équipe Elvarra vous
             contactera à partir des coordonnées indiquées.
           </p>
           <p className="mt-2 text-[13px] text-[#4A5568]">
@@ -404,7 +404,7 @@ export default function ContactForm({
               style={{ accentColor: "#1F6F63" }}
               className="mt-1 h-4 w-4 shrink-0"
             />
-            J&apos;accepte de recevoir les actualités et conseils d&apos;ELVARRA. Je pourrai
+            J&apos;accepte de recevoir les actualités et conseils d&apos;Elvarra. Je pourrai
             retirer mon consentement à tout moment.
           </label>
         </div>

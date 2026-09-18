@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     ],
     siteName: "Sésame",
     type: "website",
-    url: "https://www.sesame-group.io/contact",
+    url: "https://www.elvarra.fr/contact",
     locale: "fr_FR",
     countryName: "France",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.sesame-group.io/contact",
+    canonical: "https://www.elvarra.fr/contact",
   },
   robots: {
     index: true,

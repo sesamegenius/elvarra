@@ -3,8 +3,8 @@ import { Button, SectionLabel } from "@/components/PageUI";
 import { ArrowRight, Phone, Mail, MapPin, AlertTriangle } from "lucide-react";
 
 export const metadata = {
-  title: "Contacter un expert d'assuré | ELVARRA",
-  description: "Présentez votre sinistre à ELVARRA. Téléphone, email ou formulaire de rappel.",
+  title: "Contacter un expert d'assuré | Elvarra",
+  description: "Présentez votre sinistre à Elvarra. Téléphone, email ou formulaire de rappel.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
               Parlez-nous de votre situation
             </h1>
             <p className="mt-6 text-[17px] leading-relaxed text-[#4A5568]">
-              Indiquez-nous où en est votre dossier et les prochaines échéances. Nous vous recontacterons pour vérifier si ELVARRA peut vous accompagner.
+              Indiquez-nous où en est votre dossier et les prochaines échéances. Nous vous recontacterons pour vérifier si Elvarra peut vous accompagner.
             </p>
           </div>
         </section>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-[#B4552F]" />
                   <p className="text-left text-[14px] leading-relaxed text-[#7A2E1E]">
-                    En présence d&apos;un danger pour les personnes ou les biens, contactez d&apos;abord les services d&apos;urgence ou le professionnel compétent. Le formulaire ELVARRA n&apos;est pas un service de secours.
+                    En présence d&apos;un danger pour les personnes ou les biens, contactez d&apos;abord les services d&apos;urgence ou le professionnel compétent. Le formulaire Elvarra n&apos;est pas un service de secours.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function ContactPage() {
               Besoin d&apos;échanger directement plutôt que d&apos;écrire ?
             </h2>
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/80">
-              Appelez-nous, un membre de l&apos;équipe ELVARRA vous répondra directement.
+              Appelez-nous, un membre de l&apos;équipe Elvarra vous répondra directement.
             </p>
             <Button href="tel:+33185099748" variant="primary" className="mt-8 bg-white text-[#14213D]">
               <span className="flex items-center gap-2 text-[#14213D]">
