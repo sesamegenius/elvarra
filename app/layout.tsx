@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     "Elvarra accompagne particuliers et professionnels pour analyser, documenter, chiffrer et défendre leurs dommages après un sinistre.",
   icons: {
-    icon: "/ElvarraLogo.png",
+    icon: "/favicon.ico",
   },
   alternates: {
     canonical: "https://www.elvarra.fr",

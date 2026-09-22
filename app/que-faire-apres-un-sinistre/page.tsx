@@ -75,8 +75,17 @@ export default function QueFaireApresUnSinistrePage() {
               Checklist : les 10 réflexes après un sinistre
             </p>
             <p className="mt-2 text-[14px] leading-relaxed text-[#4A5568]">
-              Version PDF téléchargeable à venir. Un formulaire dédié précisera un consentement distinct pour toute prospection, et ne collectera que les données nécessaires.
+              Téléchargez la checklist complète au format PDF pour la garder à portée de main.
             </p>
+            
+              <a href="/Checklist10Reflexe.pdf"
+              download
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#14213D] px-6 py-3 text-[14px] text-white transition-colors hover:bg-[#1E2E52]"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Télécharger le PDF
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </section>
 
