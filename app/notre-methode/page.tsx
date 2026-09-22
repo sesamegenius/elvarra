@@ -37,9 +37,7 @@ export default function NotreMethodePage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#1F6F63]/10 text-[#1F6F63]">
-                <ClipboardList className="h-16 w-16" />
-              </div>
+                <img src="/notremethode.jpg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -80,7 +78,7 @@ export default function NotreMethodePage() {
         className="text-[18px] h-fit flex items-center justify-center "
         style={{ fontFamily: 'var(--font-display)' }}
       >
-        Parlons de votre projet
+        Parlons de votre sinistre
         <ArrowRight />
       </span>
     </a>

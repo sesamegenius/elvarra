@@ -36,7 +36,7 @@ export default function ExpertAssurePage() {
               <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-[#4A5568]">
                 L&apos;expert d&apos;assuré est choisi par l&apos;assuré pour l&apos;accompagner dans l&apos;analyse, la documentation, l&apos;évaluation et la défense de son préjudice.
               </p>
-              <Button href="/contact/" variant="primary" className="mt-8">
+              <Button href="/contact/" variant="primary" className="mt-8 hover:bg-gray-100">
                 <span className="flex items-center gap-2">
                   Faire analyser ma situation
                   <ArrowRight className="h-4 w-4" />
@@ -45,9 +45,7 @@ export default function ExpertAssurePage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#3D6BAD]/10 text-[#3D6BAD]">
-                <IconSearchDoc className="h-16 w-16" />
-              </div>
+                <img src="/expertassure.png" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
@@ -154,7 +152,7 @@ export default function ExpertAssurePage() {
             <h2 className="mx-auto max-w-[560px] text-[26px] leading-tight text-white lg:text-[32px]" style={{ fontFamily: 'var(--font-display)' }}>
               Vous voulez savoir si l&apos;expertise d&apos;assuré est pertinente pour votre dossier ?
             </h2>
-            <Button href="/contact/" variant="primary" className="mt-8 bg-white text-[#3D6BAD]">
+            <Button href="/contact/" variant="primary" className="mt-8 bg-white hover:bg-gray-100 text-[#3D6BAD]">
               <span className="flex items-center gap-2 text-[#3D6BAD]">
                 Faire analyser ma situation
                 <ArrowRight className="h-4 w-4" />

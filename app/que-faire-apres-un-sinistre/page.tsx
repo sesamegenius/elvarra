@@ -39,9 +39,7 @@ export default function QueFaireApresUnSinistrePage() {
             </div>
 
             <div className="hidden lg:flex justify-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-[2rem] bg-[#D9A44E]/10 text-[#D9A44E]">
-                <AlertTriangle className="h-16 w-16" />
-              </div>
+                <img src="/quefaireapresunsinistre.jpg" alt="Super Expert" className="rounded-xl"/>
             </div>
           </div>
         </section>
